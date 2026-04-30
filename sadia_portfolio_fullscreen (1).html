@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<style>
+/* ── GOOGLE SITES IFRAME FULL SCREEN OVERRIDE ── */
+html, body {
+  width: 100vw !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+* { box-sizing: border-box !important; }
+</style>
+<title>Sadia Akter Choity | Journalist & Media Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ── FORCE FULL SCREEN IN ALL CONTAINERS (iframe, Google Sites, Messenger) ── */
+html,body{
+  width:100% !important;
+  max-width:100vw !important;
+  min-width:0 !important;
+  overflow-x:hidden !important;
+  -webkit-text-size-adjust:100% !important;
+}
+:root{
+  --page-width:100%;
+}
+:root{
+  --ink:#0d0d0d;
+  --cream:#f9f6f0;
+  --warm:#f4ede0;
+  --gold:#b8862a;
+  --gold2:#d4a940;
+  --brown:#5c3d1e;
+  --muted:#7a6f65;
+  --border:#e2d9cc;
+  --white:#ffffff;
+}
+html{
+  scroll-behavior:smooth;
+  width:100%;
+  min-height:100vh;
+}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  overflow-x:hidden;
+  width:100%;
+  min-height:100vh;
+  position:relative;
+}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;left:0;right:0;z-index:999;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem 5rem;
+  background:rgba(249,246,240,0.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  width:100%;
+}
+.nav-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.15rem;font-weight:600;
+  letter-spacing:0.05em;color:var(--brown);
+  text-decoration:none;
+}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{
+  text-decoration:none;font-size:0.72rem;font-weight:500;
+  letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--muted);transition:color 0.25s;
+}
+.nav-links a:hover{color:var(--gold)}
+
+/* ── HERO ── */
+.hero{
+  min-height:auto;display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:5rem 5rem 4rem;
+  gap:5rem;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;
+  top:0;right:0;width:55%;height:100%;
+  background:var(--warm);
+  clip-path:polygon(12% 0,100% 0,100% 100%,0 100%);
+  z-index:0;
+}
+.hero-text{position:relative;z-index:1}
+.eyebrow{
+  display:flex;align-items:center;gap:1rem;
+  font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:1.4rem;
+}
+.eyebrow::before{content:'';width:36px;height:1px;background:var(--gold)}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,5.5vw,5rem);
+  line-height:1.05;color:var(--ink);
+  margin-bottom:1.5rem;
+}
+.hero-name span{color:var(--gold);font-style:italic}
+.hero-desc{
+  font-size:0.95rem;line-height:1.85;
+  color:var(--muted);max-width:min(420px,100%);
+  margin-bottom:2.5rem;
+}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-dark{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  padding:0.85rem 2rem;background:var(--ink);color:var(--cream);
+  text-decoration:none;font-size:0.78rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  border-radius:2px;border:2px solid var(--ink);
+  transition:all 0.25s;
+}
+.btn-dark:hover{background:var(--brown);border-color:var(--brown)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  padding:0.85rem 2rem;background:transparent;color:var(--ink);
+  text-decoration:none;font-size:0.78rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  border-radius:2px;border:2px solid var(--border);
+  transition:all 0.25s;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+/* hero photo side */
+.hero-photo{position:relative;z-index:1;display:flex;justify-content:center;align-items:center}
+.photo-wrap{
+  position:relative;
+  width:min(360px,85vw);height:min(480px,70vw * 1.33);
+  overflow:hidden;
+  border-radius:8px;
+  background:linear-gradient(175deg,#c9b49a 0%,#d4c4b0 35%,#e8ddd0 65%,#f0e6da 100%);
+  box-shadow:0 20px 60px rgba(92,61,30,0.18), 0 8px 24px rgba(92,61,30,0.12);
+}
+.photo-frame{
+  width:100%;height:100%;
+  object-fit:contain;object-position:center bottom;
+  border-radius:8px;
+  display:block;
+}
+.photo-badge{
+  position:absolute;
+  background:rgba(13,13,13,0.82);
+  backdrop-filter:blur(8px);
+  color:var(--cream);
+  padding:0.5rem 1rem;border-radius:3px;
+  font-size:0.68rem;letter-spacing:0.12em;font-weight:500;
+  white-space:nowrap;
+}
+.badge-top{top:18px;left:18px;z-index:10}
+.badge-bot{bottom:20px;right:18px;background:var(--gold);color:var(--white);backdrop-filter:none;padding:0.6rem 1.2rem;z-index:10}
+
+
+/* ── SECTIONS ── */
+section.light{background:var(--cream);padding:6rem 5rem}
+section.warm{background:var(--warm);padding:6rem 5rem}
+
+.sec-head{display:flex;align-items:flex-end;gap:1.5rem;margin-bottom:4rem}
+.sec-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:4.5rem;font-weight:300;
+  color:var(--border);line-height:1;flex-shrink:0;
+}
+.sec-info{}
+.sec-label{
+  font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:0.3rem;
+}
+.sec-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:var(--ink);
+}
+.sec-title em{font-style:italic;color:var(--brown)}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:start}
+.about-text p{font-size:0.96rem;line-height:1.9;color:#3a3028;margin-bottom:1.3rem}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.stat{
+  padding:1.5rem 1.2rem;
+  border:1px solid var(--border);
+  background:var(--white);border-radius:2px;
+}
+.stat-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;font-weight:600;color:var(--brown);
+  line-height:1;margin-bottom:0.4rem;
+}
+.stat-lbl{font-size:0.78rem;color:var(--muted);line-height:1.4}
+
+/* ── SKILLS ── */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.skill-card{
+  background:var(--white);border:1px solid var(--border);
+  padding:2rem 1.5rem;border-radius:2px;
+  position:relative;overflow:hidden;
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.skill-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.07)}
+.skill-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+}
+.sk-icon{font-size:1.8rem;margin-bottom:1rem;display:block}
+.sk-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.15rem;font-weight:600;margin-bottom:0.5rem;color:var(--ink);
+}
+.sk-desc{font-size:0.82rem;color:var(--muted);line-height:1.65}
+
+/* ── DIU IMAGES ── */
+.diu-section{background:var(--ink);padding:6rem 5rem;color:var(--cream)}
+.diu-section .sec-num{color:#2a2520}
+.diu-section .sec-label{color:var(--gold2)}
+.diu-section .sec-title{color:var(--cream)}
+.diu-section .sec-title em{color:var(--gold2)}
+
+/* DIU Media Layout */
+.diu-media-wrap{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:2rem;
+  align-items:start;
+}
+
+/* VIDEO EMBED */
+.diu-video-wrap{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:6px;
+  overflow:hidden;
+  border:2px solid rgba(212,169,64,0.4);
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  background:#000;
+}
+.diu-video-wrap iframe{
+  position:absolute;
+  inset:0;width:100%;height:100%;
+  border:none;display:block;
+}
+/* Thumbnail overlay shown before video loads */
+.diu-thumb-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,#0d1a2e,#1a2a4a);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:1rem;cursor:pointer;
+  transition:opacity 0.4s;
+  z-index:2;
+}
+.diu-thumb-overlay.hidden{opacity:0;pointer-events:none}
+.diu-play-icon{
+  transition:transform 0.2s;
+}
+.diu-play-icon:hover{transform:scale(1.12)}
+.diu-thumb-label{
+  font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:rgba(249,246,240,0.75);font-weight:500;
+}
+/* meta bar below video */
+.diu-video-meta{
+  display:flex;align-items:center;gap:0.8rem;
+  margin-top:1rem;padding:0.85rem 1.1rem;
+  background:rgba(212,169,64,0.08);
+  border:1px solid rgba(212,169,64,0.2);
+  border-radius:3px;
+}
+.diu-live-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#ff4444;flex-shrink:0;
+  animation:pulse-dot 1.8s ease-in-out infinite;
+}
+@keyframes pulse-dot{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:0.4;transform:scale(0.7)}
+}
+.diu-video-meta span{
+  font-size:0.72rem;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--gold2);
+  font-weight:500;flex:1;
+}
+.diu-yt-link{
+  font-size:0.7rem;letter-spacing:0.08em;
+  color:rgba(249,246,240,0.5);text-decoration:none;
+  text-transform:uppercase;
+  transition:color 0.2s;
+}
+.diu-yt-link:hover{color:var(--gold2)}
+
+/* RIGHT INFO GRID */
+.diu-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.diu-stat-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(212,169,64,0.2);
+  border-radius:4px;padding:1.4rem 1.1rem;
+  text-align:center;
+}
+.diu-stat-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;font-weight:700;color:var(--gold2);
+  line-height:1;margin-bottom:0.4rem;
+}
+.diu-stat-lbl{font-size:0.72rem;color:rgba(249,246,240,0.65);letter-spacing:0.05em;line-height:1.4}
+.diu-features{margin-top:1rem;display:flex;flex-direction:column;gap:0.7rem}
+.diu-feature{
+  display:flex;align-items:center;gap:0.9rem;
+  padding:0.85rem 1rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(212,169,64,0.15);
+  border-radius:3px;
+}
+.diu-feature-icon{font-size:1.2rem;flex-shrink:0}
+.diu-feature-text{font-size:0.8rem;color:rgba(249,246,240,0.75);line-height:1.4}
+.diu-feature-text strong{color:var(--gold2);display:block;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.1rem}
+
+.diu-tagline{
+  text-align:center;margin-top:3rem;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-style:italic;
+  color:var(--gold2);opacity:0.85;
+}
+
+@media(max-width:900px){
+  .diu-media-wrap{grid-template-columns:1fr}
+  .diu-info-grid{grid-template-columns:1fr 1fr}
+}
+
+/* ── EDUCATION ── */
+.edu-list{max-width:min(750px,100%)}
+.edu-item{
+  display:grid;grid-template-columns:130px 1fr;gap:2.5rem;
+  padding:2.5rem 0;border-bottom:1px solid var(--border);
+}
+.edu-item:first-child{padding-top:0}
+.edu-year{
+  font-family:'Cormorant Garamond',serif;
+  font-size:0.9rem;font-style:italic;color:var(--gold);
+  padding-top:5px;
+}
+.edu-deg{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;font-weight:600;margin-bottom:0.3rem;color:var(--ink);
+}
+.edu-school{
+  font-size:0.85rem;color:var(--brown);font-weight:500;
+  margin-bottom:0.5rem;letter-spacing:0.02em;
+}
+.edu-note{font-size:0.82rem;color:var(--muted);line-height:1.65}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:5rem;align-items:start}
+.contact-intro p{font-size:0.95rem;line-height:1.85;color:var(--muted);margin-bottom:2rem}
+.contact-items{display:flex;flex-direction:column;gap:0.9rem}
+.contact-item{
+  display:flex;align-items:center;gap:1rem;
+  text-decoration:none;
+  padding:1rem 1.2rem;
+  background:var(--white);border:1px solid var(--border);border-radius:2px;
+  transition:border-color 0.2s,background 0.2s;
+}
+.contact-item:hover{border-color:var(--gold);background:var(--warm)}
+.ci-icon{
+  width:38px;height:38px;border-radius:50%;
+  background:var(--warm);display:flex;align-items:center;
+  justify-content:center;font-size:1rem;flex-shrink:0;
+}
+.ci-label{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
+.ci-val{font-size:0.88rem;color:var(--ink);margin-top:2px;font-weight:500}
+
+/* form */
+.contact-form{display:flex;flex-direction:column;gap:1.1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{display:flex;flex-direction:column;gap:0.4rem}
+.fg label{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.fg input,.fg textarea{
+  border:1px solid var(--border);background:var(--white);
+  padding:0.8rem 1rem;font-family:'Inter',sans-serif;
+  font-size:0.88rem;color:var(--ink);border-radius:2px;
+  outline:none;transition:border-color 0.2s;resize:vertical;
+}
+.fg input:focus,.fg textarea:focus{border-color:var(--gold)}
+.fg textarea{min-height:120px}
+.send-btn{
+  align-self:flex-start;
+  padding:0.85rem 2rem;background:var(--ink);color:var(--cream);
+  border:none;cursor:pointer;font-family:'Inter',sans-serif;
+  font-size:0.78rem;font-weight:500;letter-spacing:0.1em;
+  text-transform:uppercase;border-radius:2px;
+  transition:background 0.25s;
+}
+.send-btn:hover{background:var(--brown)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink);color:rgba(249,246,240,0.6);
+  padding:2.5rem 5rem;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.f-brand{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.1rem;font-style:italic;color:var(--gold2);
+}
+.f-copy{font-size:0.76rem;letter-spacing:0.04em}
+
+
+/* ── MODAL ── */
+.stat{cursor:pointer;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s}
+.stat:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1);border-color:var(--gold)}
+.skill-card{cursor:pointer}
+.modal-overlay{
+  display:none;position:fixed;inset:0;z-index:9999;
+  background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);
+  align-items:center;justify-content:center;
+}
+.modal-overlay.open{display:flex}
+.modal-box{
+  background:var(--white);max-width:min(600px,95vw);width:95%;
+  border-radius:4px;padding:2.5rem;position:relative;
+  border-top:4px solid var(--gold);
+  animation:fadeUp 0.3s ease;
+}
+.modal-close{
+  position:absolute;top:1rem;right:1rem;
+  background:none;border:none;font-size:1.5rem;cursor:pointer;
+  color:var(--muted);line-height:1;
+}
+.modal-close:hover{color:var(--ink)}
+.modal-icon{font-size:2.5rem;margin-bottom:1rem}
+.modal-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;font-weight:600;color:var(--ink);margin-bottom:0.5rem;
+}
+.modal-subtitle{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;font-weight:500}
+.modal-body{font-size:0.92rem;line-height:1.85;color:var(--muted)}
+.modal-body ul{margin-left:1.2rem;margin-top:0.5rem}
+.modal-body li{margin-bottom:0.4rem}
+.modal-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.2rem}
+.modal-tag{
+  padding:0.3rem 0.9rem;background:var(--warm);border:1px solid var(--border);
+  border-radius:2px;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--brown);font-weight:500;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-text>*{opacity:0;animation:fadeUp 0.7s ease forwards}
+.eyebrow{animation-delay:0.1s}
+.hero-name{animation-delay:0.25s}
+.hero-desc{animation-delay:0.4s}
+.hero-btns{animation-delay:0.55s}
+.hero-photo{opacity:0;animation:fadeUp 0.8s ease 0.3s forwards}
+
+/* ── RESPONSIVE ── */
+
+/* ── MY WORK ── */
+.work-section{background:var(--cream);padding:6rem 5rem}
+.work-section .sec-num{color:var(--border)}
+.article-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:4px;overflow:hidden;
+  transition:transform 0.25s,box-shadow 0.25s;
+  cursor:pointer;
+}
+.article-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,0.1)}
+.article-img{
+  width:100%;height:220px;object-fit:cover;display:block;
+  background:linear-gradient(135deg,var(--warm),var(--border));
+}
+.article-img-placeholder{
+  width:100%;height:220px;
+  background:linear-gradient(135deg,#f0e8d8,#e8ddd0);
+  display:flex;align-items:center;justify-content:center;
+  font-size:3rem;
+}
+.article-body{padding:1.8rem}
+.article-tag{
+  display:inline-block;padding:0.25rem 0.8rem;
+  background:var(--warm);border:1px solid var(--border);
+  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;border-radius:2px;margin-bottom:1rem;
+}
+.article-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;font-weight:600;line-height:1.3;
+  color:var(--ink);margin-bottom:0.7rem;
+}
+.article-meta{
+  font-size:0.75rem;color:var(--muted);margin-bottom:0.8rem;
+  display:flex;gap:1rem;align-items:center;
+}
+.article-excerpt{font-size:0.82rem;color:var(--muted);line-height:1.7}
+.article-read{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  margin-top:1.2rem;font-size:0.75rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);
+  text-decoration:none;border-bottom:1px solid transparent;
+  transition:border-color 0.2s;
+}
+.article-read:hover{border-bottom-color:var(--gold)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@media(max-width:900px){.work-grid{grid-template-columns:1fr}}
+
+/* ══════════════════════════════════════
+   FULLY RESPONSIVE — ALL BREAKPOINTS
+   ══════════════════════════════════════ */
+
+/* ── TABLET (max 1024px) ── */
+@media(max-width:1024px){
+  nav{padding:1rem 2.5rem}
+  .hero{padding:7rem 2.5rem 4rem;gap:3rem}
+  section.light,section.warm,.diu-section,.work-section{padding:5rem 2.5rem}
+  footer{padding:2.5rem 2.5rem}
+  .photo-wrap{width:300px;height:400px}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{gap:3rem}
+}
+
+/* ── MOBILE LANDSCAPE + SMALL TABLET (max 768px) ── */
+@media(max-width:768px){
+  /* NAV */
+  nav{padding:1rem 1.2rem;flex-wrap:wrap;gap:0.6rem}
+  .nav-logo{font-size:1rem}
+  .nav-links{gap:0.8rem;flex-wrap:wrap}
+  .nav-links a{font-size:0.65rem;letter-spacing:0.1em}
+
+  /* HERO — text first, photo below, everything visible without scroll */
+  .hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:5.5rem 1.2rem 3rem;
+    gap:2rem;
+    min-height:auto;
+  }
+  .hero::before{display:none}
+  .hero-text{
+    width:100%;
+    text-align:center;
+    order:1;
+  }
+  .eyebrow{justify-content:center}
+  .hero-photo{
+    display:flex !important;
+    justify-content:center;
+    order:2;
+    width:100%;
+  }
+  .photo-wrap{width:240px;height:310px}
+  .hero-name{font-size:clamp(2rem,7vw,3rem)}
+  .hero-desc{max-width:100%;font-size:0.9rem;margin-left:auto;margin-right:auto}
+  .hero-btns{flex-direction:column;gap:0.7rem;align-items:center}
+  .btn-dark,.btn-ghost{width:100%;max-width:280px;justify-content:center;text-align:center}
+
+  /* SECTIONS */
+  section.light,section.warm,.diu-section,.work-section{padding:3.5rem 1.2rem}
+
+  /* ABOUT */
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  .about-stats{grid-template-columns:1fr 1fr}
+
+  /* SKILLS */
+  .skills-grid{grid-template-columns:1fr 1fr;gap:1rem}
+  .skill-card{padding:1.4rem 1rem}
+
+  /* DIU SECTION */
+  .diu-media-wrap{grid-template-columns:1fr;gap:1.5rem}
+  .diu-info-grid{grid-template-columns:1fr 1fr}
+
+  /* EDUCATION */
+  .edu-item{grid-template-columns:1fr;gap:0.5rem}
+  .edu-year{padding-top:0}
+
+  /* WORK */
+  .work-grid{grid-template-columns:1fr;gap:1.2rem}
+
+  /* CONTACT */
+  .contact-grid{grid-template-columns:1fr;gap:2rem}
+  .form-row{grid-template-columns:1fr}
+
+  /* FOOTER */
+  footer{flex-direction:column;gap:0.8rem;text-align:center;padding:2rem 1.2rem}
+
+  /* SEC HEAD */
+  .sec-head{flex-direction:column;gap:0.3rem;align-items:flex-start;margin-bottom:2.5rem}
+  .sec-num{font-size:2.5rem}
+
+  /* MODAL */
+  .modal-box{padding:1.5rem;width:95%}
+  .modal-title{font-size:1.4rem}
+  
+  /* EYEBROW center fix */
+  .eyebrow::before{display:none}
+}
+
+/* ── MOBILE PORTRAIT (max 480px) ── */
+@media(max-width:480px){
+  /* NAV — hamburger-style scroll */
+  nav{padding:0.9rem 1rem}
+  .nav-links{gap:0.6rem}
+  .nav-links a{font-size:0.6rem}
+
+  /* HERO */
+  .hero{padding:5rem 1rem 2.5rem;gap:1.5rem}
+  .photo-wrap{width:200px;height:265px}
+  .badge-top{top:12px;left:12px;font-size:0.62rem;padding:0.4rem 0.8rem}
+  .badge-bot{bottom:14px;right:12px;font-size:0.62rem;padding:0.45rem 0.9rem}
+  .hero-name{font-size:clamp(2rem,9vw,3rem)}
+  .hero-desc{font-size:0.85rem}
+
+  /* SECTIONS */
+  section.light,section.warm,.diu-section,.work-section{padding:3rem 1rem}
+
+  /* SKILLS */
+  .skills-grid{grid-template-columns:1fr}
+
+  /* ABOUT STATS */
+  .about-stats{grid-template-columns:1fr 1fr;gap:0.8rem}
+  .stat{padding:1.2rem 0.9rem}
+  .stat-val{font-size:1.6rem}
+
+  /* DIU */
+  .diu-info-grid{grid-template-columns:1fr 1fr;gap:0.8rem}
+  .diu-stat-val{font-size:1.6rem}
+
+  /* CONTACT */
+  .send-btn{width:100%;justify-content:center;text-align:center}
+
+  /* FOOTER */
+  footer{padding:1.8rem 1rem}
+  .f-copy{font-size:0.7rem}
+
+  /* MODAL */
+  .modal-box{padding:1.2rem;border-radius:3px}
+}
+
+/* ── VERY SMALL PHONES (max 360px) ── */
+@media(max-width:360px){
+  .nav-links{gap:0.5rem;font-size:0.58rem}
+  .nav-logo{font-size:0.9rem}
+  .hero{padding:4.5rem 0.8rem 2rem}
+  .photo-wrap{width:190px;height:250px}
+  section.light,section.warm,.diu-section,.work-section{padding:2.5rem 0.8rem}
+  .skills-grid{grid-template-columns:1fr}
+  .about-stats,.diu-info-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">Sadia Akter Choity</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#diu">University</a></li>
+    <li><a href="#work">Articles</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="eyebrow">Journalist &amp; Media Student</p>
+    <h1 class="hero-name">Sadia<br>Akter<br><span>Choity</span></h1>
+    <p class="hero-desc">Pursuing truth through stories. A passionate journalism student at Daffodil International University, dedicated to ethical reporting and meaningful communication.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-dark">Get in Touch →</a>
+      <a href="https://www.facebook.com/taohi.tafi" target="_blank" class="btn-ghost">Facebook Profile</a>
+      <a href="https://www.linkedin.com/in/sadia-akter-choity-6a6b81406" target="_blank" class="btn-ghost">LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-wrap">
+      <img class="photo-frame" src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAIpAcMDASIAAhEBAxEB/8QAHQABAAICAwEBAAAAAAAAAAAAAAQFAwYCBwgBCf/EAEcQAAEEAQIEAwYEAwUGBQMFAAEAAgMRBAUhBhIxQRNRYQcicYGRoRQyscEI0eEVIzNC8CRSYnKy8RY0NnOiJXSCNTdDY2T/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAgMEBQEG/8QAKBEAAgICAwACAgICAwEAAAAAAAECEQMhBBIxQVETIgUyFGEVI3FS/9oADAMBAAIRAxEAPwDxkiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIrDS9Jys732t5Ih1e7YL1Jt0jyUlFWyvUjFw8nJNQQuf69ls+BoOmwESZEjp3DflugrKXLijhEcMbImA+6GitlasVf2ZS8t6ijW4uGsoMa/JkbGD2b7xWZ/DsHIOXM3I2cRsp82S4klu19QOhWIzO8MtFXdg+SfqvEP3fyVr+Gs0V4ckMl9KcsE2g6pELOM4j/h3V83Kk5GDuK/VSmahIGNF0QSQR8U6wY7ZEaRPBNAaljcw+oWJdhF2LnxOhzIhID0d3HqqHVOG3Ni/Eaa50zKss7gfuvHj+YnscvxLRraLk9rmOLXtLXDqCFxVRcEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAX0Ak0BZK+LYeG9MJi/HzROc3fwwRt8VKMezojOSirOWkaKxkYycxtki2R/uVauzHhgiaxjGAUA0VSxZMhJBPNfksDyCLIr5q1yS0imMXLcjI+QuFggUsbi5zQHbr7CwPFHmrzAugs78ZzQHRHxWAWSOyhZb1S8I7Ii4FvQ1YtZn4xLGvaNwLIUmCMMp/KHNIpzT0I/b4qVjQtdLzREkAU5pO4Ki3RJKysZiuLXF23KCTawhjjuQQCFs+TA2SOVoi5SWhwAG2wNqJJgt8Jxbs4mgCeg7f6+KKSY6lO17mu2FUN/RWOm5xhmaWnbloeXxWGfDDMccgLiTtXcD9VGc18bxezu9KUZNPRCcE0S9d0nF1aIS44LcnlLrA2d8VokjCyRzHCi00V2BjZsjKii92yLJHXy6qv4k0luZC/LhawZLBbg01z+eynKPdWvSqEnB0/DTUQ7GiioNIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREBL0rEOZmNiF8vVxHYLa8md0UbIYDyxtFCx1VboEJx8IzdHy/os8hJd7xsq7+sf/Sn+0rPviF3U2ubIzKfcaR8tlhF2KofJWGAx0jmtL3AfJQLaOeFhyfmdGS29zRNfRTpYMeGLmaGkDc8r9x+6zDxaEUIAcBVAD7mlc6Bw27NkDsghzjtTiTfyChLIo+lkMbm6RruNzTHliiJaOh6fdWeFiTNmDnROIoCw26XaWicFYcLRz47XgjoD0+y2XG4UwBGP9laGjbfr6LFPmRujbDgzas6mi0rxorHU2N+pFKpzsKWFtUS6gXk9fQUu7m8KNax/I3boAB2UPJ4KfkO3DI2nejGCPv1KhHlJO7Jy4jqqOkWDmAa6PlbW4IIsdh/2UbPwWEF8Z94jp0pd6n2d4xHM5rZDV0ByV9FqnE/AboC5+LG2xvQs3t5FXx5cG6KJcKaV0dPZEEuO5pcAb7g7KZguMooN6A1XX+qtNV0zIa8RSAEA0AW1v6Knysd2FK2g8eYOw+y2Y5r1GDLjdUzWeKMH8Nl+OxtRy715HuFTrfNVxxn6Y9rmkuLeZprcV/rt81ohFEg9l7kW7RHFK1X0fERFWWhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAF9AsgL4smOOadg/4ggZtpYYMOKMAD3Rufgo12duvmp2otIawkgDlAA7lQ2BpeOcgAHoO6uyelOHcSXhYM2QOYNpvYnurbDxW44oyW4mrHQfDzUCLOIAjjFE7AXsB5K70fHfkPYQ0ON0TX2VMpJK2aIxbdIsOH9NfkZIa0AAkEnpfxK7f4N4cihjEhYLPU1ufqqTgXQHB7ZpY6bdmwu09PiayNrQAKFClzM+W20jscbCoq36cIMGOIcoafmpcOOKIAACz8gFAV6Ws0TaoVS50lbOgnSMcWNtVLMzFBIJA+izxihazsbuNlJIi5MjHFG45b/ZVmraZHNE4PZzbfAhbA0Gzf1UTPGxA8lKSpWiKd6Z0L7ROHBA45EQde5oCwfiutsowzH8NkMbZJAJ6g/FekuJMJmXE6NwuwQD3Xnz2h6RJp2aXtBABPbqt/Dz2urOdzePX7JGutjfh5bsOQgsva9wR5rQtTj8LUJ4x0Ehr4Wt5zsgZEEGU3/EYeR/mPJalxSzl1RzwK52gketbrqvcDipVMqkRFWWhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAFmwm8+XE3zcFhU/QGc+qwg+a9j6iMtJmz6lIXOBNEAUPgq9zqNjv0UzPe0kEA12BUE241XzU8j2QxKkkStOY6XJYwAkk9Qu6vZ9oFRRyyRAAUd+oWlezDhuXNyhkSxnkFGzsAF3lpWNHjQtjjAAAApc3k5t9Udjh8fXZlvp2O2MANbtQCu8VhPUKmjzcTF5Wzyta53QEi1bYeqaY9wDcuMnyBtY+ra8N7lFOrJ4jdV10WeKMmjR2SObGeA5kjSD5FSY5Im7FwJ+KolGnssjJNaDIz5blZWR2e4K5xuYR1FeYXIUDd7KUUvSLbAjPyKiZ8Zo0N6Vg2VlEEgfFYcmTGIPNK0V1JKlKNqkRUqezVM6AmyW/RdZ+1rRW5miTzxx3JGCTQ3IpdranqelxtI/FRuI7Ai1qmsvxNSxZG48jXgtIcO4sdwowUsckyU2skWjypE4gy45Fcw+hG/7Kh4pJ/HMadyI27rc+K9OdpfEhiAAY57gD26kLU+L4eTJieP9wAr6DHLtjPmskeuSihREXh6EREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAW++zzgXW9XwpNbx4Q2CMHwuY14hHktCXoz2Ux5WQNOxm5EscEenNcI2uppsd/mVVlyvGrRfgwLNLq/DqXUIZY8h0E8TopGbODuq56Hhuzc+KBrRRcAfqtx9qOj5A1uGWKANa+EGx0d/XcbKFwDik6xFEWlpDhe3qjy9oX8nqwdMnX4O6eEtIiwNMjZGKJaL8yrLUfxTYhFhtJmfsHVs31UzBjDYmN7AALPmyNhhLuhq7XHcm5Wd5RSikVGlcMyTEuzMgvkfuXHcj0G+y5arwS0gvx87IEgFCyCD8lR8Q8aOwWGLHPIQaLiLJPkB5+pWsa1xbxLgYkudLiSCKLkdI6aXcc98oqx160BstOOOSStGTLLHDTL+fSte0x3NHJI5oPVryR9LV5oPEGqMlazILiRQN9+ipY8vXH6SzPyMVzI2QR5EkuHOJAxkgtpew9vhuKU/Ts9uXExzw3xBR5mfleOxH8uyhljJL9kTwyhJ3FnZ+lZ/jxA9Cp2TlGOIknYDqqHh2PnhBG1eSttdi8PB5u1dPNY7aRraTZqOv8RajG7w8UGt9x2+61h2NrWsTFvNI3mO5LzQXziHXItML5HtDnE01pP6rUZeM9ZfqmHg4+JO6XNeWY7XO8NjyCQaog1YI3PZasMZtaRlzzhB/szsvE4RZDE05Wa97gLBbQAP3JUbUdEyMUtycKY20++07hw8vRadFxJrsWAzVMjFyo8QyGMyQymRrHA0Q4OsjcHpXxW78O62NTw2kFr3ECy3ofX0+CZY5Iu34MUsc1+vp037YMExajiyhpBfM8WfkR+q0Li7SsnJ0gapjxPfFFTZnAbAnzXb3t5xyIMZzBThNY+Y/otHh1GdvAGt4bWtETGeJJY3NmgPquhgyfojl8jEvyOzqJERaTIEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAXoP2H6m2bRYMphJlxsd+PJ8tx9v0Xnxdsfw85hg1HLxJD/dZQprSf8AMAenysKrPDtBmji5OmRM2XiLNzNWzMePH5i5jqjFdL2I+6naJortO4jiEzeV5cLFVR2sUpw0zI0TiOHPZjuycEnmLmtvl+KutVdDkajg6pjlpa6YtPL0BPfb6fJc6M3VHUniuXajdMQCxSmZWCzJg5XDqO2yh4RsNV9gsDgLWVumbPUdea9wbHJPFlQNe2RhsOBs3fXfZa/x3wrla86KWZo8URhj3tBp4HQlvmL6hd5NwmSA8w+y4HSYibIO/krI8mUdFMuNCXp177OMI8N6DLpuHhf3k9eNPOSbAFABoFAD1PdSNO4YixJ3zRM5GvPMYmg8gN2SLJItdgQ6VCwgtjF+ZFpl47WggADZJ8hy9JQwQg9IrdDuJ/KBQIAVtroMuE1ovpVKuxGiKUG9yrbLIfits1RWduy6to6q4r4d58uPNZitl5KLQ4mgQd7rrf7LQOIuDsjVNbbl4/8As395zHcnwyTZLa9d6816Kgx4pgY3AEHsVHl4exufmEdHzGy0Y87itFGTBGT2dc4WDPgcJt4f0vHLoiT4s0vvOeT1NVQ6lWfC3DDdLibI0FpIHMAaF/Bb3Bo0UY2a40ueRihsZaBsB0VeXNKXox4owVI6f9semjJw4eQN8QuBaT5i/wCa6S48jk0vh6aKJ9DKLWyAHsDf8l6Z4p04ZOTitftHE8veT5AH+i8y+1AmsmJ5/wAMhgH/ACro8H9lX0c3+QXXf2daIiLec4IiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAtx4Uzn6RBjZkBIkjyGuHrW5/ZahGLePqtgxQ46ZEe3OSFJK0yLdNM9T4EsWRislaPExsmMSM7Agi6KqY9NixMCdmPI50ZlEgaTYYQey1L2Q8b4rsGLRdXnZjzYpH4WV5oPbezSfMfcLadY4h0fShI6bKhkky5mgBpFDYAUN+w3XGnicZNH0EMynBOzdNIk542k9aC2TT3bi/NahoMnNEwjcEdVs2JJRFH5LPNUzVF2jZ4mktBbVLO2MCiTuq/EygIxbhfkub80AkVQ8yoSpbPYpvRNle2IEmqVBn6jE6Z0bDzOG226qeMdffiYjhC7mkIIDR1JVHo3Eel6dgRzatN4Ur7Liet2vEm1dE6SezZ8bIDpQ2jY3qt1dzBz8U7UfRavo+u6FnZRyMTLbKw0La7v5FbXHqWB4Rsggihv0SUfsJ/RUMzG40pMjqA62r3TNQx8ot5XtIPdapqer6NjTCPKyIw6U01p3J+SqcfNl0rVzG0ObA88zATVAnooxTRKUU1Z2sYhVtoj0VXqIIsAfRYtO1ds0IcT1HmuOXkB4LrClJprRRGLT2azxE1ola7sASfovJPtYnZLqmVIz8r55KPnuV6d9oPEWJo+mZUmVIwf3ZLGk7lwuq39T2Xj7XcyTMwBPI/mLpnnf1J/muv/HRqDZxf5KSc4r6NfREWwxBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAcmfmWx4m2DEKsEu+q1xn5lsWOawYSfU/qpx8Iv0FwbufuV8pziCC4kbizsFze0OHkOlrnE0g2R1Gx9VBxsmm14emuAswZ2gYWS02HxNJPrW/wB1tccxY0k7DzXVHsN1Zs2ivwnEc2M7lAvsSSP5LtK+dg22I7Li5otTaZ9FxpKWNEqHUC3a/msWfrccEbi99UOlqI+IuFCwVT6vgZBe2TctYC+h3PYKjqm9mhtpWi103GfqM4yZ220/lBHQKxzdCxJoQ18LCB0sCwtR0rjvDxsg4c+LkCdostEZ6efwVw7j7BLCBjuBHQO2Vyi14VKXbZEztAdBkCXAgaJOmwq/mFZaRp+sSyeHkAQxnvzWSqt3HTGyczIonAHoQaVnjceYrmNe6GJjj8VFxm3tFqpLRfYug4sGSMh7GySN6FwBr1+KhcXYP4jGM0QAkZuCB5dlAfx1EZXF0TXM7EAi1EzONdOyZPwsJkdK4flEZIF+ZpVPHNOz3trZL4Z1fxIjEXU5potPUFX78wujI7rSMLGn/tuaaMVE9rCQB37rZRII2F0jg0MBJJ7ABedblSPJSqLZ0h/ERnk6g2Dn3bGBsem5J/16Lo/JcTpEYrbxCbXYHtr1aLUdYly4nW2RxDPLl7H6LrvNeBiwxDrVlfS410xpf6Pk8ku+Ry+2QkRFE9CIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiA5Ri3hbMYnR4EDT15f3VDpsXiZLBViwK81t+qRBjGtr8rQPnSkvCPyV0VvHJW9UFke8NkI7UPssItrgTYHSwsuTbnh5o87bsDuvESNq9mGrjSeKY43OqLLAjPkD1B/ZehsLLDmNFgg9CO68nRSuYxr2Eh8RBBHUEGwV3lwNxG3M03GMr7eWgEnzrcLnczHb7I6nAzUurOy45ACDsQSp4bHNCARvaoMbJbI0FpBBVrgSkgX9FzXGjrXaMeraNjTsbK1jWys3Dq3+B9FSh2DE/wNZwmOAsMlDAa8rtbabcaG4Kgajp3jtJDQRXQhXQytKmeR/V2YdA03QGROghjxpIibAlaCAT5X0VpDo2kNw5MYQ6fHYoyCr87FrUX4UuOaixnADrRq1nxhLI4NOK4A7EWTas7Isbg3dbMmpnTMLUTHp0EeVkP90uLAQPQK0xNGig04uma0zO94kAbHyXLR9Nbjkyfh2sJN2RurKd55CDQFLPkyN6R7Jp+FVEGsioDcLUfarxA3RuGZY43AZWaDBGPIEbn5A/UhbPl5UWPBLkSvbHFGC57iaAAFkrznxjxHNxNxPLnbjEhJZjNddBt9a8zV/TyWjh4e8034jnc7kdIOK9Zp/FJM2TjtN+HHE27+H9Frk8hkkLitj4yc6MxsaOUEditYXbm/g+fggiIoEwiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiLkwW6kBecK47X5jXO6MHMVfZoBaSTzFxNfPuVC4XhbyPtp97Yn0G5U3LLS9zm7AdPn/RWPSIR9KfIsOseSkREPgDbuhY9D5LjKxrnEnlPpa4wO5XU2wT0vsR0UETOApsrrFAi69VvXs0y2u58GQ0Ltp7haPltotkA2ugfQ7q44SyziatH7wAJB3KpzRuLL+PLrkTO7MDPkxpBHMaF7O7ELZsHUmFw94fLutXwGxajgAtIcSBt3CxmPKwn2wl7AenkuS4p+ncjJ1rw7Q0+ZrgOY2D0VvE2IsG133XWekcQRsIjldyH1NLacLW8eRoaJmj0tUyi0XRaZsoxcdzg5zbWQYeMw8waqZmptA2eCPO1zZqjCfzt+qj2aJNFvKxoBIC17WcxsLHAuAJ7+S55+sxxsJLx5ADcn5LrX2uallwcGZuU6QxPlLYo2tNEAkXfytTxR7ySZVll0i2aX7U+OWam92jabIDiNdWRI014hH+Ueg7+ZWgQSmWMAA00E0Pj91WtP93v2O59CrDSCGv3AtzDRvv5ruYcahSR87myyncmQeKLlhLiLLT1WrrZ9deSXscQfdtayepWjIqZnxu0fERFWWBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBZ8NnPKL6XusClYFeK0Hud17H08fhuWiNEeHKeUh3Jt8T/wB18nbyMdZugBfr/qlnwOSPEe8gkBzRV+RGyh5EofI4EkAEmh3velZMhj2iJV240a2WOIAlrTsb6+XxWVnvM5SACdwP5rhyltbVfX1VdlhmyGc2E5pbuwXY79/3WDGkMc8T7ILSD8iFaGJxwHyCqLaI9aKq3MdytLd/dBseh/koyVpk4tppo7d4G1A+C1rnE3Xdb2wxztBeLNdQupeDJg1jN96G9+i7O0p5fG2zvQXHzKmdzjyuNMyZemRTA8oseY2KrJcPKxjUUjhXQG1tEUbqG1/Bc/w3indt/EKhTa9NHU1SLL1Y+6Dt5/6CtsCLU5aL5S0HuAr3G02K78NpVizHYxtMaAfMBVyn9E4xZXYuH4Q55C50g2Bcei699vkpj4UgjP8Any2D6Bx/ZdqGLlBJXV3t/wAZ8/CbZI2k+Dksca7Agi/uFbxZXlVlPMT/ABOjouroAKxxjc90RTP2oKviJoA7KfBceO57h7zui+gx7Z81ka6lNrDyZyCbIB/VUjvzH4qxz5TI+ST1pVx6lTyEMZ8REVZYEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAFJwhb2+juvkoymaUOafkAJJNhSj6ePw3SKm6Q5zACeYGj5hVjS6aUOrdwseV0rqGDkx2Mkby89ivXqoL4BFjhzSQ4FzWAd99yf2UpO2eQTSOLcen0QSQAT8FzfBs5xaBXQefmVKjZ4uXA5pDWmMB1eY7fZSp4mvL+hIjJB9NyP1pVlhGYxw0+VjaJvr57dFVsja1m7gKFD6n+SudPmH9nyucBsA8n5G/2VJkyNYyIEbFoP1N/uvH4Fppmz8LScjwKIF9V2lw/KCxoB8l1pw1CSxs1gsNAkH9lv2hxyMkaGHmA67rl51bZ1+K9G8YrmkAqxx3AEEgFV2BE58YsEGlOZjyAijfpa50mdOK0WUQiq+UA+i5OLOw3USNkoBBqllAIB90kquyaRxnNigqDifSI9Y0bLwJTTZ4yzmqy09iPgaPyV/wAjnP5arzXOWAcpbXUbqzHNxaaIZIqSaZ5E13SNQ0bPfhZ+PJFICQCRs8XsQehCwZsvLA9rabyN5evfuvT3EnDGBrGP4WdjxygGwSBbT2IPYrrPiX2NS5sUzdFzC3KA8QRTUGyDfoex8wfRdzjcyD/tpnz3J4GRO47R0NPJYDQdh91gV3xVwrr/AAzlfh9a06bGN015Fsd8CNiqRa3K9mTr10wiIvAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREARFkxoJsmdkGPE+WV55WMY0lzj5ABAY0Xb/AAN7A+Ktb8LI1h8ej4jwHU/3piP+UdPmu9ODPYxwdw1A2ZmEdRyh1nyRzlp9G1QVU88IesshilN6PKvCnAfEfEUrDj4L4MVx97JmHKwD59V2g72f4HCGiMy2j8fll9SPcBQFf5Qu+NV05uLHeIWcjvzMLfy1vstP4shOXjxxsZyl/O1wJFH3TdV6gLO+T2dI1R46it+nTXFEbYWwzQj8wDyR0Njv+nyVVmMD3NDSACCSAe9Wfvaza3O9hdhu5i6I8o3JoDofuVXDIALHnemEX6nqtUHaM01TM+MSMUStFchIsHz/AO6yxTv/AA0kgALTsLPof3WHHla1pDW0HAuI69QFgid/sxaHbsFj1uwpkDNPkCLAnjYKuNrSD69P1Kps4884BumgAV6bKTkTgs5qovcXEeQGw/RRWNLnmU7i/uvGDcuCMkNvHIAaQGus9z0P12+i7f4cxY5MaN4ABrcAdV0NwzKGal4LrAe0tvy7g/ULvrgiV0uFFIW7vAJ26Gtx9lzOWq2jrcF9lTN30iFtcpb9lcDT2OFtasOkQgsFiu6uom8tAj5rlXs6jdeFWNPI6Cl8OFyi/wBlfN5SN1xfG117I4nikzXI4AJCSPquMzAHH1KucjDBBo0VWZWLKLrel7FUG7ZBlhBNj6KFkzCDWdNFhvOXtPrsD+ylSmaMkeGT8FTanDkTajps4icWxZIDu1B21/KwVJHt0rRdcRaZiZmA9mXiQ5LYv71jZGhwdXUb+lrT9V9jvAGrYsmQNIOLI4B4djyFvX06LsSOSMyjHma4F3u2Rsdux81y07GEERxwS4RExgnqR2v1qldjzzg9MyZoQzK2jobN/h94emeTia3n43/C4NeB+iqtT/h0ma29P4kY8noJsci/oSvQOXjEODg2t6JU7Gi5oxynl22KvXOyGZ8PEeStY9gnHeCwvgjwc0DoI5wHH5OpaFrvC/EWhymLVtHzMUju+M8v1Gy95jH5o3srlAO7ibv4BRw0PYWTMa8f8QtXw5//ANI8f8Ypf0Z+fhBHUEL4vfMujaTO0+LpmG49d4G/yXWHt89n2hZPAmdrWDpuPiahp7fFD4GBnO0fmDgOuy0Y+XCcupRm/jsmKDlfh5VREWo54REQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREARFmwcWfNzIcPFidLPM8MjY0WXEmgEBN4Y0LUuJNag0nSsd02TM6gOzR3JPYBewvY77KtK4JwWzlrMrWJG/32W4Xy+jB2H3X32H+zfF4K0KN0jGyatktDsqby/4R6BdpQRtJsC2jv5n+iwZ89/rF6L8eK9swR44jYXPNkdCVGy4pvD5ovdcN7Av5K0ljbI2iaXBhIBa42a+qwuTNCVO0UGonGyca3SNZKNw49j3G/wBKWja40QyjF5fBcWFjgRZHNQsH4lbvxPp7XMkbQHMC5pHZw3+/7Lr7WdVg1GSOLLja7JeSHtBouI3BB7b9hW4U8STdF6la2dEcewDD17IdGC1r2g7Hv0K1oPJFg9q+gW1e0d1yxFzXiTnebI2LTRFee97rUYj7vLRvY2utjVJHPy6mySJHeFYNE9D36hfXy9Gh1NJB+FC1HddtF9BQC4PcQCeor7qwqs+SnxHbbCys8LDyNiOwJ5ifOgsMTA4NN13NqxxmEMsCwRV+R81GySVmfCYWZLHnqKPrS9Bey7GP9lQNfuSXEb7EA7H7ldCYjWjJjD9i4VR+i9J+yyADhjBcY+VwhFk973H2pc/m/wBbOlwdSN806PlaBt06Up7mXRArzULFsdrU+M2NxS5Wjqt7OIB87WQC+vRcm15IfMFEeWfHNBHmFgliaQdh8Cs5Praxv70F6eXRBfjMcdwLUTNx2xRNcaA8RgFeZcArUt3tVeuuPi4GOBZfksJ+Rv8AZeUSTPmXEXzhhvleCD6Ebg/dfdPmJypYJD/eBrSfU9L+33UjKa5ksT+wfR9LUWSMM12GVtU+FzDXcggj91FsqUG22iTksa4iwSb7LJjxNMFGwPTrSzmMsk95paa7hc4w0tIF+vqrEtkJf6MZgHhAtcC0XseqgvgIJNdFbxQlx8QggD/L5rDKQSQBufRe0X4nTTZWFoJA7eSjang42o6dk4GUwPgyInRSA9wRRVq1nuXy2FwcwUTygBTg2naNU+sotM8Ke1DgzUOCeJZdPy2XjyEvxZm/lkZf6jutUXqP+MPFi/8AB2k5HgjnZmFofW4Bb0+y8uLu4pOcE2fJZ8ax5HFBERWFIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAF3l/Chwc3Uten4nzYuaDB9zHsbGQ9T8h+q6PjY6R7WMBc5xAAHcr3R7HeG2cMcB6Zpgj5J/DEk3mZHbn+XyVHIn0hosxR7SN2xmUyx+Zxpp8vMqZG3lpoFADssWNQJI6dGjyClAWy7sjsuW0baMMji2QHqCaAWSRgLgaojdYyLsO2Pa1xilJe6N7iCDQPmFW1sMicQMdJprnNNObuNu66D9pkxwdTgyoHOYXsokbUbIK9BZjSMZ7HUSem/ULob2o4f4zCyZ49jFMQRXagR+pVuGu6sg7VnVftGLZYMWdlEkCqO1eVVtstQb0LgOo7diFsWtyGbDZikW6I8wvvt0VFjNN1W/l5rrQWjLkduzDOaIdXQri+uQE+WyzSM5gW9LFgrHG0uaGEX5X2KsIUZMZgJYACCdvj3VxhC8U9AR7pv7FVmM24wRYcNx6EKxA5KeD7krQCL3B/oVFolAladjmfNgZW7Wlxs9AN9/ovTvs8b/APQIPeumNAIGxAaOi6I4PxLxTkBnNLM4Mc2r5WfHtYBP/Zd/cFMDNKYGmw2m1fQ8osetLmc2TapHY4WJpNmzwXSmRuF12UGK76KVEd1zDeSWkb9195q+Cxt6L6didkAe7fZcS4Eb9PJfHEm9tljJN7D7pZ5RkJFigqTUnF/E2lwiyA9zj6U07q2YS9/KwW4+uw9Svs2JHFqmI8e9K4P5nHqaH6bqSi2rJRVs46u3kwJX1YAB22VDp0sjczEgmaS5kh5XDcOaWn7jYLaNSZz4743A04USFWy4jWeBO2/dkbXzNH9U6N7+izGlTLiKc00PhbLGNveB2PkCOilGHHewyY+OXEC3MDtx61vY9VXxTyxOPI6r6ggEH5FS4s2UPDm+GHDoQ0A/YKyL1syyg/UHRRyRtlBfQNdLIPYEIzDx5Gl7XSzOG/K2ga7mu4UpuUY3CR8LQ5535TQd8RuFHlkayQPihdG4G7Djt8FOkiHZ+GFowCS0Rzt+YK4uxsFwLY8l0Z//ALGbfUFSX5TJH3NiNc4ii4EtJPyUaRrXlxbGWg9Bd1817ouim16aX7aeBjxbwDmaaHRyTAeLjysdYEjdx8L6fNeDszGmw8ubEyY3RzQvLJGOFFrgaIX6P8oDBuQLNheS/wCLPgtmj8SwcT4MXLi6nYn5Rs2Yd/8A8h+hXQ4uXfRnH5+Opdjo5ERbjnhERAEREAREQBERAEREAREQBERAEREAREQBERAEREBuXsW0T+3/AGl6NguZzRNnE0o/4We8f0XuvDa1rnO/3G/cryj/AAfaa6fjrUdTLRyYmEWWfN7gP0BXq/H5+RrvDHK5x2Ipwrof6LFyrbSNPHpGU3GAWk2OoWXHyWSbWWyDsdrSFnMCTufQLHk4xsOaacD2WCVo1UiRlPqPxGMLuU+8O9LAQyaLxoTZGzh3X3FyCXmKWmyVQd2PoVgyw7DlM7BTSfeb2Vcm/kKNsOm8SF0Z2cBt6hdX8a4Qd+KgaQBLHzDbqQP9fRdiaw7w4Bm41kdSB29FoPF7hPJh5bSA2+V4HkQAfsp4X+yITVI8760BFkuLW7g713VLmFrQZWN5SXXQ+62biWJrcuWOtxJ9r2WualGYwzte59DsP5rtQ8McvTkYmzRhwFc4sV2Kw+G7xHNcANrH7kLLhkHmhBJrdvYjzH7qRLGJImyMFDqa6+RH7qZExRRgZAsgF4DgPUdQpccPiBrW7ua6wAO17/zUV1tjjkqzE7n8th1HzCt8BjDnRhpLQ4X09FGXhKHpuvs7jc6WSSMOADnOYboUGmv1/wBWu+uFoZnaZBO5sEglL5eXmDH8t0Dt32Pmum+AseVjDE4CQNlcwA7C9rI+hK7t0SJsehQxm+fGI5iALLSB1Hfe9/Vc7Mk3s2/5DgkovZYiImi3Hmb3JcBX26/62WWNhDg0iisuA2IhrmubG8bi75T/AC+dqdPj3EHGMRuBslvQg+vYrJLDq0asHM70pekJg3PdcnAdD3XJrHAEgEtBqwPsvh/N5fFZ3Fr02qRhe2jXmuDI3PNMaA26LvL4DuswDZnyBsgAiA5q6knsPLZSII2xRhjG0B3J6X13PxVkMd7ZOKT2cIIWRGg3br57+vqo+eCNYwSea3skAFeQG6tQGEFgNgdSACT91R5j2nieFrua2wu953YEjt2Vs4pKkWYn2bSRZvaTjSRSAk1cZPY9x9P0VbkSA4wjA95sjCR/+QUqDIyWZT44pOeMiy0iwdvstTzcySfObIRLFGyZlGJ9B9OA97uR3pVNtE8eGTb+kbPK0hzd63/ZSoWUQLskeSwyAUARvYUyIAEnvVBSgkzPOVIM5mDkcC4HpQuj6rg+NzHcsjrcO4KlPaWMsW69jXZRWWTTjZvqvXoz3Z8eDQN919Fiz1CyEN5SN9t1xeKaQT22RGjHK1RByXFsMh6kbhan7UuFoeL+AM/SJWDx3xl+O4jdsjd2n67fNbfkRlzC29yCjmgNbQ6CirIycZKS+Dnc2PZ0fm7lQS42TLjzMLJYnlj2nqCDRCxrtX+J7hU8O+0efNhi5cPVQcmMgbc9++Prv811Uu1F9laONVaCIi9AREQBERAEREAREQBERAEREAREQBERAEREAREQHpr+DTEazRtbznMvxMhkYP8Aytv916IaC1jQDZAJNm7J6rpH+EjD8P2feNZByM2R30ofsu8smBjm2AAR0I2pYeXLdGzjQ1ZzxjdX0Kkse3xQ0EEjqoEMjo3iF1uJ/IT3+PwU7FaWRcrjbrJLj1NlYWzR1Zh1DGElOaKdfZYouWSJ2NkAOBFAkbhTjyucARt5qJkxmJ/M0WD9lCSs9SNfMh03PdpGX/hZIJgeTsa7fFdfccc2nZb8JxtjwJIz51e31/Vdp67i4+paaY5PdcKLHj80bgRRB81057UJZ54QcgNbkwxlwLCaJBpwB8iKI+fkvcSqSRXN2rOpeI2j+25XNHM11OAJ7bn9lQZ8bn4z3cp5rB69DurviF/KRlNcDUIby3uSTQ+1qHjRudjEyVbjR+IH9V24aRil6UoBgkDnCgdyR8FY4JDzI0jZ24B7GjY+Y3XPVsTlwGtABLBuR6bKu06R7oS4k3G9jvUi6/cKZEmxRgylrj7tlrgR2rr9P1UzDuERzG3GKTlPqR0+1fJYs+PkcOTY8wB9dt1zxyHsINgFzX2T5EgqEnonD07k9leM6dhLgCA8uc7y2s19fsu59Ja0T+CA0CeMxknp0sH6gfVdZezTFdBhBjaa4sYCSOpO5r5ELtDAeYJ43EWGkO+/T7Llyl+7TOhPjKcFKPpkiJaCx29dPgrHEkcAeVxHmAdlUai0xalK1psNLmgA9KcK+xUvHn5K5jVmhfcq+MVRQ8XWKaLhjvHiAAa1wsWBsfPZQ9S06eRjXY8jIhIaLnX7o7kDe9+yq8HP585pL5DRdyRg00MJrndfWyCAPIEjvW040jHwNBLaY8OvboRf6hQeKMvgljzTRUMx4NOYcN0lkUOZ43ce5JoWST5LI+N5kLXbEC79PNWBbgyPPjwmV7zZfQBF+QP7qPPDEBzBo9y+UgUQoyxUrNuHmO1Fr0wMNOJrY7AKvY1r9fnpoIZA0A0N7J2+ynhwABB3tQ9Lp+fnPOx5wN/IDb9VRJ+HQTraPjxLjyubjgcrwQ5pNV6grWp8OSPADninBzbA7e8FuTmtLw6undVOfGfwEo7Xe/xChNWtk8fI62vsmSiqPYAFSY+g2PksOQDyD5EqRDuzY71taQ0jDOd2ZorZ7vLzA7neq9FHlj8OctBBA8uylsDo2BpaCT1I3pRnNp5BogHqFJorUq0cwPcNeSwyOBafgpEZ2O+1dFBeSC/fb4rxGjF8nBxIIBNkL5KQ1oB27L64iy470LXGw911sje0ZeXto6k/il4VOv8As4lz4IufL0p34hlDcs6PH03+S8aL9INQxoszCnw52h8M0ZY9p7giivz+9oXD83C/GWp6JM0gY87hGT/mYTbT9KXU4k7jTORmjUigREWoqCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiA9nfwv43h+y/SgDT3mSTp5vP8l3AC3kIPUb7b2uu/Yhp34H2Z6FELt2I2Q1sbIJ/dbniZRx5HMkLqBsOI2IPb0P8lh5Si29mvjSkq1oliFxd4psHsPJZJJS2IS9Q2+YeY7/AM/kswbzgEHtfxUZ5DS6J4oHquan6dLrTRJYWkAjz+q5TjnZV0SNlDw5AWMbf5Tyn5WP2WeWWgbIoKvtRZLD8orJ5QHPx5RRJIDh+66U9rL/AARJjyj3uQSRk7fEfr9V3HqTg5wcQbNuNeQXUntmg/H6bHJD/ixAkO/ZW4H2kZs+JRVo6Y1d5e3EHMNyXEVvTbIXx1wxRNBJcGkj1NdVjneyWeAuttRkUO3Yn7Fcc0taCSHANjsAdu/6kBdyHhy5fZjmeZQ7GYXPcGgAg7WopxjixOLqAeAAB1Nb39QsmHzBrC4NLnnmIaegvp+g+as8sMkdGwNut3X2F/yCmRRHzJGvkeHHdlk/Eg7fdctHjMj4IyL53cg9RY/mo2YajfLy2STt5uqgFdaExseRgc7RQPM4nzFFVzlSsshBydI9G+zfFjytOkEoaHCQ0KqwDQ/Q/ULa8nHdjsDWuc4VdO3NehVTwC0x6VGHGz4bT8DS2mdjMjGa6ubmAI81iuGRvWzU45eNTXhV6rKIM5shB5ciJkwPYWKNfMfdRdSy2hrY+cRkmw/ysEA/JZOMQHYWnvbkQsnZGWBj3UXEE7EnYdehrstaGUzKycSKQU5t+I1wJ2Brp3JPT+SlSapGxKOXEvv6Nx0gsbC1xoveA82KoUAB8gAFNgmlkmbI0ExjcNOwd6n0618iqbTsiN7i1xa5wIuNpBA/5j3Pp/3V9jeK9wLi0AEGgOymo0V54LEqSLKgWGRpdy/5Q4bqHmzke4Gm+5XMNyWuGQRzxiw6MbHzoH5dCob3GQlwBAJ2vqFn5EmlSHCxqT7N+GWJzeXe1F0q/wAbmuA6y119ApkVcu4H0WDSG+7lOI6zO3+iy/COk/6smsZzh1GiN91W6jH/ALJK3oQCaVkA4NBsWNwe6h5ruaKSxZIN18EfhjcmmZcgUzffYLnCf7sGxVL7O00D5tC5QW6INFWaAXkdEL2SGW0eGbdzC7HQLDMwtcdxY8uilAmJgiIPOdrHRRd6PxU34E6ZjZYB7G+ihygiQ+RKluPK4g9atRZTzHobBXi8NWF7OBFvPqK+ybcgI7JsXGhYASU0AQALUJOmU8iNyRje7o4WaO/wXmP+MPhlzM3TuK4Ix4cgOLOQO4JLSfuF6eJDbB6Va0r2u8Nf+JfZxqukFgMz4fFgvs9h5h+lfNaeLk6yMGfFa0eD0X17Sx5a4UQaIXxdc54REQBERAEREAREQBERAEREAREQBERAEREAX0bml8WXFbz5UTP954H3QH6B+znFGNw5pMBseHhRjc/8DQrvJf4M3MBY6EV1CjcOMEWPjs2puOBv8ApmXEJ3kREeruw/mV89lm3Kz6PFGKilRLxJ4pGjkIBHQFfM2LnZ4ookdR5qBDC/Fk52tJ8z3KsgW5EPMwkWCCO4VfZrZJwvRTB5hnc0itw8H0v+n3UrLlPJzADYcxHoo2rY8zWslDXODTRIF7HufKiAsccjo4XeI4G9iSVVds1RjeO36iBqEk87HMx42k1/eOcabfkO5pdae0NssGnyCeQEWAGtFDf79yuxMlznMklbK8sb+QA00E2e3U9OvmusfaFM7JxXRh1mwXDyorTx3U6MOeDlDszpsx82otIArwyPTqf2/VYs1xyJXQxDeWTkutgAN/vSzMeGzy0QCIjZPayVgxnhrWPoioy7c9Aa+9/ou9DyziT9oNgbA8vc4EMGxG1kDYD4b/VfBMXRtJdu8bEdxupWRGfChjJs9ZNtjtZ+9BQzXOZT1JAAPSu1epUrIGWeLnEUTXC2W4+p3/n+i2fBwg0xTNcKYQaIq7aLN9tgK9SqLT4/FkYXNdy7CuhJO9/ddhRYLf7JijDOZz5mW4DoAdzXYEAfRZs0qNvEhbs7n4Sk/wBnIj2NdD2oALaDknH5Y4uUOA2FGwPNavwVBGcYzUC57QLHUAD+a2SPHa1xcS5xJs2uS5NN0zuzxwmle0iJrsbpNKglHSCYlzRZsEfre/yVBBo+C3OfO1rWERhrm2Q02ST0Pkt0EPiafkNIAaHNJ237havpWGTruZ4xLvw3KIwbrcWD8aFeisjkcds5uTjt5V1dGxaRBjRsDI42xivdaBQCs3crRQNDyVOGkEU8gqTGZnNsPO3YrRi5KlpkeVw8j2nZZQNdIQWmg27JG3RRp2gzuIAa0mwB/rzX2CXni8NoIeOjR0Pra4TlzphRFb39lPKlKNmfiOWPIk16faNVWyw6Q4GCVw7yu/VZQSWOFmwCoejBzdOvqTI838z/ACWTVo68rcWWoe2rJoAKBmkNgkcOhYaHyWVx6Bx2PVYM81jSHYN5SACklaMbi7J76IA3FALhAKZy3uuUxBdt1ACx4wJeRuSTQBUY0Rp7JzHB4dASRJVAgX2ulFDiLDgbBoqTK4RRhgvxiNz3Cit3okk2ptBM4Skh5PXahaiy2SD0Kk5J6mt6UIlxkAFkm9l5VGnE92fWHlcSSK7r4Xb8ux8lwyg6OF9t3obH4qNjTF7wHdOgNrNldSotUVPZnld7zmkjof2XN4EkQaR1H7KNMR+JJ3/Kf2UofkabHQdVKMqooyQuTX+jwR7X9D/8Pe0XWNPa3liM5mi/5H+8P1r5LUl6I/jM0ARajo3EULAGSRHElLRtbbc37E/Red138U+8FI4OSDhJxYREVhAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCl6OzxNXw4/96dg/+QURWXCzQ/ibTGnvlxD/AOYRhH6AacXmSDmjJa2PoTsT2/RW8mU1ga0x0K7dAqzR2yPz4nH8g6AdOhVxmxNeW8+4BI60vnZ2fUQilVkHIzgyjWx2ulgxdVEeQABTSdwCppx8d/u00gDezawS6divFNjDXEWCQRfwtUVN7LP1qmTc3lyMQuhe4OG4ANH127/BaRr8uU2sdhfzONkNbsBtZ26d1fMlkwniKQuLQa3N0uGbJjxPbkPa18TxTiRuFW5bothUVT2mVWNkukxDhtxiW1VukAIPn33XT/tIyJdN1STHnZyOIskGwfVd0ZGnYsj25mIXRg7kAkA/JdU+3zTHTaMzUYbdLj2147ln9D+q0ce+6K+U4uOlR1A6nZOS4dDCNh5EpFEXeG1oHISwG99uv7hR9MeJRdEufDXXyJBP6KXjuIBaRTmlhA8xyn9wvooajR8zN27RjGR+ImsAguJaL2Fdz/ryXGdjjLTWn3gAO9E9/oCuEQN4/O07sPT0BU/CYZpowNgx5JPw6fqvSEVbJ+kY/Jm4hI/u2OAfd9bBP6LsqIxxZ+XE1niBj2ti5ehA2v1FfqVp+lY4cYhHymRzrAI3shb5pkD8HIlwJ43SWI75j7wO10d+tnqsfIZ0eKnR21oOC3D0jC2a0vha4sHUEje9z/q1ZtoC+l9FH0PwGRCV0fOT/hscdgPM113Vm/ImkILn0B0AAAHwXNaT2dNSklSRwjLRjTXZsAD431Kq2tDM+Q0LlAJPqAAB9ir10rZoGtdB4sl7loDSPSwFUajG1obLGCeU3R6jeiCk1rRCMt21s5VfULNjENaQT3KxsIcARuCLC5xjcjqqoads1SacTOHEktjbufIblfXnleWEhxG5dtv02XBj2MaQAASK5vILk9pj2e0kndrhsKC1qTqjK0r8PoA3JIApR9M5Y9Nj5rNuedv+YrI548NxvoD8tl9wA1uBjgiyYwfmRag/S1eGUFrqAYSR/wAKx6q0f2c8FlWNqHTcKQbAHYHyWLUrdiEeZaPqQjbog1bMkoIe7pQpcovdcCLu7sL5P+c8vc0ubHCiB1O1LyKdmNp7JGS5j4LNNnYNz0JH81BaDfoFYThsEQmcWuleAACLq+59VXxu33A8uiseiETHl2Iy4LBpwbJM63bgCrWbPP8AcgjoSq3ElazKNuo9LCi3TRqxRbg6JPELT+ClcWudsCA00diDt+td1R4mYyRgAok9TVWfP5q41ueOKBrJJNnmgaNbbm/LstM17KiwnNysZ0ZHNUgBvr3H+u6ozySZfxsM3Uvg2KOUy50cV24tNgDtturZrGtPKBsBQHVazw2Zsp34qR3LGdwe7qOw+Hf1+S2WedjA5zdz2AVUXeyzPBd6R1j/ABNaG3VvZNqjomc0uGWZUYG9crve/wDiSvEy/RLV8Ya3o2XpkrP7vKhfE/bs4EL89tUw5dP1PKwZgRLjzOiePVpIP6LtcCfaDRwefj6TT+yMiItxgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIArXg8XxXpI/wD9kX/UFVK44JbzcYaO3zzYv+oLx+Hq9P0A055iMRa3mcCNvPsrSfGypnhznFoJ/KOgHr5qmxy5nhv8iDQ9CtlM7pIW/hxzPfYAJoCupK5eDGp22j6HLJxqjBiRNa2X+6bV7Gt6FbhTWOFAEA9t/IrBjRuh9xzg4jex6r7ymMkHeMGgSdwtChFfBQ5dn6Q8/T25DnRxtaBuT5gei1/O0uZpbG6UtAcCA7oR3C27HkjOS4c1kCqC452PHPA4EAHse6plxYN3Wz3881+t6Nd1QmLGfJG22tFuaO3r8F1nx+YtR0bIY081tILT2seS7Mml8LI/DSge9baI2I+K6u9pmFLocpljDnY0t8pJ6HyP6rGsTx5LXhrlNTx0/Tz7gluO9rCaLHmP60R+qlPlax7gBRAABPW1W6w/lyMoR3zc4eK8u/6hcp5zIGyE1zAGvK124O4o+fnptFoA1z4A12ws+osEBfMTJMMkrSSHcwArtdX+qgDMaAHuvlaKdXWj/VR8iWssAOtr6Fg9bFAj6KTIr07R9nrmS5rszKbeJjCyXXRJ2A269F2RorZ5NYil8MyRPmBEbzbQxprcfEj6FdbeztjpNFZhxu5nOmYKNetE35m12xwt4M+pSOjJayEtjjAPUgmyfiRfzXM5DtnY4sdI33A5g8ucRv2AoAeSnhwArdU8hyocnDY6N8bZS47t2IA/qrS29AbWKmvTpONJO/SXjzS8px4gAXkG7o38VligDswxylmQHEB3MARfQ9+oUAuBb0seXmpXPEMINbiVIXbzEmh8/P7KcXfplyxrwhui8AmLcFhog9QuLHHmNEUApmpTCTKDi0hwY0PsUbrc/puopok11Vckk9Eo5HVM+se0PBcLFdFlLnBgdKS4G+VpPUnqVij8IOJla5zQDs0i/usruXmMsj+ZrhYDd/QDyHT7FWxPJNWR8k8uPKbr3Cb+SlRtLYYmgflYAdvIAKBmvPIGDbxHtZ9SAphkkE1te5oPkSEkTj4Z3vcGjzHmvuTRZGD3kZt8wvjMh/MGPeSCaNgEL7lk3E7lsF5PMOgAB/ek9RFyaez4JA8kbjfZZsWQxlsgrmBsAqvifdktoDdScM2A4jbrR6KVmeSJWaB4QyS63SCiBZAJ7qvEm/nv1ClZN4+PK6ZwPiVyMPU+vpWyq2PcOpoo5bIxg2tGXUpRyNaDW915qubdkkVfmsupSEFriRQ6qOx4c4AOBBUJO2b8UKgY9VdK4xU8BrQbJ9T/AEVfHpjZgcjLdzRB1gVQrrZHdTdQcyPJBmNtYwENHcpBLPl8u1MB27BY5u5s0KTjClow6Y5uXnujx5C2FhJABoeS2FjAxha1tmtgBuVEwNGcM4ZsTmRRvaRIANyexH+uysoGCGUgOLgQeq14eLJ034YJ5lbV7RDDZYiB4bhvuTQAXiH+I7Rhovtd1iJkfJHkublMAG3vizXzte7XVI8tuwW7/VeUP42dMbBxdo2pMZRnxHRPd58rrH2curx8Sxt0czmyc4pv4PPiIi1nNCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAr32ftD+ONEaehzov+oKiV/wCzkc3HuhN886L/AKgh6vT3qWtdygSObe4qiOvqr3Gc4AOaAwnqT1B7qldIY2Na1lkkjfsArrCmZPC0uZRIohZYRUNI7bk5I5h7mSEOcXNuw7uD5fBRJ3yPxI+cuY82+wC4Hqa271S4TzCCXw5C4AuAa4naz0BWXEbEA0SHlawmmg+d9PTfovaV7ZHLCahcVs+4z/BcHtfESaJDmkEA/Pyr6FZH5hay52taeoLSSCLNb/CkycTDfE0gyNJBbbZCNvkoBwcyKUs5jk4xu+c+8y99vOq26dVZUWqTOevzQkpSWj7m4zcw+K3lDmgkEmlrXF+AzVNCn07La0ucDyPIstPYhbHobJIIshspJBeHRueKdRA2O3Y2q3X5ouZzbaXN3IHbytZpQtNHQ7d6cfDxZr+PNhcQZWJkNc2SMlrwfMbFQWvAidE4mht8uoXZf8QmkxY+s4muQNIOSDHNXQkDY/Ei/ourpyWSDu1wH07FaMf9UczKmps5tl98EmwQQfIrIXc7OQkksog969Pgom4BZd0LrzKyj3XtLXGxXzGykyK9O0OB5XNxpMsuDnPYWkgkEDpY+QK7k9m0jG6VgyOiAljaRITuXgj3Xb+XT6LonhoNkY3HPOGvjc4ltghoF3sfIfdd3+z7Ne7SseKQtMRZXvAl1AVd3ssWaOzrYZVE7LeX5+Riu8RzmxEvcaBJsUN/mpOXyRAFrhzE1y/LzVBi5DWAlznPbQAuQgDtZo777Wp8TnZJjjfK2NjJK5GyWL7b9uve1myJNf7L8U3dXozumFbuAHRSjlZbRFjSzBkRIFObzDr6XarW5ElnFcBIx55ARu4G6sErG8uxms5pHzSSMIa6Q2WDcE+d1+qoVpl8lfwWedlNmyXOaGhopra7gCgfisIlAPU2VBEgJG+47LmH9Njsovbsr61omsIJ3JpZ4pC4ubEGiIj3i4bgDck79VXsl7l1Dzq6CSvEoaIrEdm33Qddbn0G3VWLR7VnKRzJNQha3mDA4uAcdzQPX5lTBb3mjVd1U4rhLqpLXhzY4T9SRX2BVjA88xJNBHtknpJEoENHM02R0JUQ5RfO5hJJEZcR8SB/Nc5pmmMub0AVXivHiZEu+5DN+wAv9T9l5dOgo3snxytaDd0R3VhhTxGYBzeexTW9r9VRvdzMALep2N2s0TuRvNfMW7gA1fzXrlTISxk3UZpJA52Q4CQGgAOo7/IbKHHKbANHva4anO5/hySNAc4bgEXt3ryWBkwAJBvboVFytl2LHo5alITW1AjsojHkHmb2O1L7lSg8oINk7j5LiGm20aB6ELx+2aVGkkcMtoyMsOc4mgBv06KwxGkGONotxOwHSlVYmSMicBwo8xr4Xta2HTogGmQNok1fmOyjgxfklZTmydEW+M9rYGt68oANdNuqxTvDT4hbYB7DsVDflDGncx5oE2pBeZYgLaAa5dxW2/X4LtQjqkcXNNYv2fyIpGOL3tJc4DcenVefv41oI5+FNHzmt96LMLOaugc07f8AxXd4hlOc3w7EY3JLu4O31/RdY/xW6aNQ9ledLGCXYeRHkDfoOblP2crYRaeyqc/yY26PGKIitMAREQBERAEREAREQBERAEREAREQBERAFsHs324+0I+WdF/1Ba+ti9mn/wC4GhX3zov+oLxko/2R7xDjLG0x7AEkuJ2IVtpjxFFGSSQQQT62q1rWtYADytBFgd/JT8VodjgddzdLjT5MlK/g+lWOPWj7qWM3IhlY6Ow4G73C1HXdTzdNiLXHxAB7pGxPoR+62+VsoYGslAsdxeyqNR04zs9/lefUq+eWMo2nTNfDlCD/AOzaNYxeP8dghblSOb/eVRb0r/XVb3g8RablYzJW5UVPBcPeHRdb6vocmfp+XNHiMjEMjY4nEWXCiXEdgOlfNaJkYGZgSRlhLhKSOU3RqrB8+q9xzpXdm3JxMHLVwWjtfific4+b4GmNMwkJdJK0EtZ2Avpff0SKIv04yxkPMh53uJBJJ63R+CpOFtck/Dsg1DSgIgAGvh25R8D/ADW1ROxvwjpYeVzTYsCvr3CtUk9pmPk4Vx4dEjpb25xty+DMqg4ux5WSCxRHvV+hK6C5y5hJsgbi/wBF6K9rbGO4c1TwwTGYCSe1iiF5xLhQb26n4q3BLsmz5flKpmbYNLxYNCq7FSmRc0sbWgbvAFeVKKAa5RvQBBCscJnJlR3ZIcCB/r4qx7KY/Zu3BkLm6q6EusjEcWh3UGht/rzXdPCOLJj4LQ5ri7kIa1vQgCtvXYhdQcJQyTaoJ4uXmrlcXGg0EgWfLddv6FkQRPYX5UUnLGabCC8knyPTqO/ms+VJKzXx8k5OktGwRSNkMckRdATZ5CBZ2G1C7/orbHZKCDHG6LmIBlkAa2h6E7nyta/+LlY4MxofwxLQSS63kfEdL9FO0xkO0jozK7YEkkvBHmCf0WGm2dJuMFX2Xt4zDJHGPEcbFB9k7EWXDoOvTcqC98pkDJQG+EOUBpJFfNZX5cEQ/unNLrqh2HqFHBHiOIcJBfUd1XkaWi3DFvbJAJrqALXJrqYSSbC4gWBt13ormWggtcql6SltgSAirpIn2/kDfFsEDvRNbj0/dcGx9QG2TsK6lA+SCN+PGLe+wS3sSPyj4nqpsRS8R80QA5WoSg2A5rLuxsCdvqp0L2vcRzVRFjoVW8LPJ0d0hABlme4/I1+ymSxuafFis31ASiE5NMkTuYxha00Tud1XYtDBEgJJlc59+dk19qWDVMrwseWVxcCGkC/PopB5I4IYQKEcYaB5AClFvZdiWrBnqZrRZoWdlZMkx8MNlnc10jwTG1u4FjqVQ81zOJDiOgrv8VOYWuidC6g8W5o2sEdV5eyU4ptEaSeV+c7xg1zj1sUB8PJZJOR5prjG4n/N0KhwuuYuJdYPdZfFucNc2rPVRv7NEI0jhnOeyUAtNE9Qvs8obhzSNcbZE5w+IBpR55nMnBicHMJOx6KPq+TG3SMim8j3BrRvYNuClemetGDheR88rRKHAjcg9Cb+63rTsmIgMc8NJO1mge2y0rSJGxSRs2qgBW5tXkMJkjcyaIOjduSLAH19Vs4sVGJhzQWR7ZbcSYn4vBaQCXRyB4ArcDqPhRWTGxw57sjIDXt5QAyth0O46XY6rV9V1nUMJpii5ssdAwtskeRrr8SombxTPJp8WLp+O/HnyQGESs3h7EV3I336LYpdU6If8TPLKPykTuIOL8WCd8EMnPMDyBrBZB+Cr+K9Pn4i9nmu4szP77JxHtY2/Jvu/cX81A4c0lsWHJkThsvPkgczxu2ybcD6mtlusGJPDF4fMwsIo8vdVxzqMrkzZy8OKOP8UVT+T87CCDR6hfFfe0LSzovG+s6WW8ogy5GtH/Ddj7EKhW8+Oap0EREPAiIgCIiAIiIAiIgCIiAIiIAiIgCvvZ47k470N3lnRf8AUFQq04TlMHFGlTD/ACZkR/8AmEZ6nTPemVlOZMHbCMEBxB38zt9Fa6c8SROLH7g9jdjsqAsfmZLGsswRjncRe5O4AP3+isQ9mGI/CFXQLb7UuJmgkq+T6DiZJ5HtaLdkrS0EtdV/m7FHsbyOc0XQJu9lFOQ4mMXyxVYrusx1LEZGWyxhoIoiqVEcdvbNM3XiI2NjuOlmIgU+ydvMrVc/hmTIx4bZToncwAFk9iPpv8lt2NqeNLlMiiFxDYkC+X4/NXDYoHNJa5pBN3S14ZRSpsli5s+LpfJ14MOfSnA+G2SM1basKxY9joi3wzHzDZw/1ur7VsWOQ8ojYbO5L6od1SufHBO7FeGgCuTn2sV2PdSllhdJlmXlLOrfp1F7Z5XYXC+piQU5wDBXfmIAPw3XnICmg/deoP4kMIT+zx+XBQMGTH4hA/yEkb/AkLzFW5FbevZauMkoOmfOc23kJOIznLRdVsSFZ4TmjLgNj3KNnod1VQNc1vKyyT5KZFQyRQPI2hXmewV78KYepHaOg4zosXM1B4EYOKJABX5WmiR67g/JXfD+uB0jQJgAQ3a7JNHYfW1qfDEOfqZGnfiXRsLPDDqugeoruKHRXGjafkYGa1+IfF5SA9oHvCtrBP6bLHkk3Z9HxMUFp+nbGl0ceSWWICR4AY1w98G+p8hXZWbZ2xOEzWyCQgBwbvdd1R6R4Qx2zbNnOz2gUDXQ12O5sK0jc4NJBO6xudeEcuFZJUywlniyZxLHQDmgnl81ygP94GkCrWAY8jYWZBjbG0nYnYu+A6lZmRuY9tAURd2s8pNysuhHrFK/CcC3muqKzGiQK3pRzsL6bLKxwc424UB0C9W2Qkvk4ys8Rhby2CNwVHzcl8GBO2V7RKIyQ40Cdul11+almuQkHcDZVuunw9MdGA2TInIjbZ3HMQASPnsvWeRr5JmkMZj6LjQCuZsYJ9Sdz9ypnP4cN7EHtaikhjGt6UKtR8vMihZ779wNmjck+QCs8RS2rsh649ksuJjd5ZhsO4G5+wU6V7S8joQOqr+QZOr4sjmlnhQGTlPUE0BfrVrNK4+8etmlSzZDaRyw4pZWHw7Lidy3evVZc98eNEGxlrpySHSNOw8wPPYr5iSOaWiJxa0kc4A6jyUPVA2J5jY0USCSTZKMlFW6OWMx1c12Bvuvrp2CY87XbC9hdLGJHMia0Bws7n0WEzNMUjj1J5QT3ULNUYWrOBNGwC5p7GtlVcY5Yg0uJvNTpJ2gAnfoT+ysGO6G/dHmVonG+t4uRxLHpYfzHDYC+jsHuo18hX1U0rVleRpKjc+HJRMYxICXEACxsR3W7CGGSEubG2gKJJoBaJwfLCyOKSZpLRR5b3IN0fhst7/EDJaG+C4MAsAAgf1WzjySjs50prvaZVT5EbCYYWBzrokDa/3VfJpuRJK7J8PlIaQ2xv8AL4q+ZiyDm8HHoknqKpTofHvlkx28tUCDaslyILVmp8uUF+hR40MmLp4ikB/LZ22vrf1CuosgljC6w0tB36dF9z4g/HJ5NzQA377LDEyRsTLYXAHlIAJIHmsDbm2zM5/klb+TyT/FlpH4H2nHUo2VDqWMyUEdC5vuu/QLp9eqf4yNBZNwhpeuwAl2HleDJt0a9pr7tH1XlZd3jy7Y0fP8qHTK0ERFcZwiIgCIiAIiIAiIgCIiAIiIAiIgCkadJ4OoY03+5K130IKjr6NjaA/QbAmjh0RspoAsD/j5falQN1gZeqGONxMYFEjp8PitOyuJ9QdwFpcbont8eGJvihwAcC26G93Xotr4aw8Q4zWQscXBgcQQTsdwQT1/na4XITcz7XhYoYcCcmbhpk0GTiGFzt2bi/JY8mSJk7I5Y2vZ0si1CixpY3xmNpa2wHAdSO6uxjRAkAAgAbnqVTJvwxZpKLtOzniY0LNo2gWbFDZZp524wJeRyge8B29Qok8zY4uVrtwKACiwMM35mueSDXkqk2nSMsnatmcPbM3xGyW124N3YUPOjY6JzZ2skjo2HC9vRS8bDzWYsQ8KOBgaAfcJIoLFmS6fhsD5y6Rx3DiQRflQ26KfRvbM35KR11x7gMl4M1cQTTTY5xH88UpssoWCD5Ageq8tOaBdNva17P1uDDzsTIw3yCTHyWGOVsYp4a4Ud7612pdMceexLMYcGTg+OedsriyaHIkaDENyHkmtuxG56Uuhw8iiqbMuZubs6XhfQoEg9yrrQcJ+bkjlb7rKq9+p6rYuJfZJxpoGP+KlwYsuJrS6Q4r+csA3JIIBI+Fqd7NMCJjBNlEAO6Xudga27ef0W2U01pnvHX7pv4Nj0aFuBpjJweWYRmQEdiDQ+p/VXHDkTZntLQHFzuYEnfff9SVW6r4UmKDE5wJjBI6A0SP6/NXfBuLJjFsszW+6Gua0kGxQrvssGaX0deORykmbvLj439oljCGQsrxSCAAa3A+amMbhkDJilZLHzEBgaaB8zQuunb5qsiDciMvkfGHizV3t5Vvv8Cp+gY7MnMOO8iO2EhwG4cOhGxr/ALrJs0RaaLOBrJwHth/GSAX703I0HyA8h8fko3jkzOD4vDcDRaL2I6jdZH5mOMEY8sTmZTCQJY6BNHpYqx6FRQ8vlsykuIHvO6ryROOvSa6QctkEfFGP9+gQCQsAErmFrJG316L7hRZJyHB/K6x2FKKbsm0qJ5cGMLmEWOhIsX6hVuqvbNm4IeB4j5g4ixRABJNfEDZTcmKSMgGhfkaWu52TJ/4ngYfdIhJAHRoOxI+5+JVi2zPNqMWy7z5z4hbG7p1J6D09SqVjzLmxsY5pdI+i5ws11NfIEfRSMmfxT+Hx2+60W8g0AD0HxK44EbWTS5RLeSJhawjsf8x+wHyKlIwQk5SSJmMQczNyARdiMeQoX+pWOdzQQDve9Lhpzj/ZrZ2kXO4yG+4JJB+lLkCXSglrXAdj3VTOtDSJELnyQhvMIwLJcOu292oUrvFmaxxLuUGnEmzv5KXlzkNa5sTY4ASTH3B/dQcQCWVzveFbCuoUdWWw27MuQ8siq9wOih+I04/KRVusUueovaDyk0ehKg5LnO5WsFigbHQLz5NNpI5yytYzmDiB+i6iggOV7TdXzHcr4opQ4NcaBJaCAfQLtHLgyPCDgOdg3IB3Hy7rrXRYpXavqMrvGjkknJBdHViqG5C04q6s5fNm26Rvmjar+FyQHwtkaR2HXfah5bldh8PatmajjiWLH8KJp5eZ4q68r6rRuEJcXFMTv7MmznvO7nNoWO9mgB5WVu+Pk4s/ilzXYJYBykyB3Od7AAJHZRldaOYnJO6L6PKloiWaEeoO4RuVCXUMmEny5xYVbiM5gJI8iGdoO9EErLqGNpuVBUgja4f5miiD8lSk29knNoniXFNNdO0m+gNqNNlMilLonCQdxdUfh3WsPw3xSPbimR/IRbhJsQb6Dz2XJkM5IHM4eisjNxVUThJ3b8Na/iZyIZ/Y1qgeLfzxFtjofEC8Wr2b7fsM5Hso1iIbmKNsp+TgV4yXY4ku2OznczeSwiItRkCIiAIiIAiIgCIiAIiIAiIgCIiAIiID0rweZtb4E4cyCSY8bG8LlH+8HEE/QBdsaADDDC9pB5BXxae3+vVdY/w5uZn+zXHhcLOPmSxn4Ehw/Vdu4WOMeGNpaPdNEelrkcmLU2z6zHmjPhwgy4FENLTYO9+imOhfLC0wmwR09VWRu8OR0rto+gb+6inWpcR7xEA+MncXVFZXG1ZhSbVIvIsB/KTKWsHcnr8llxJYWSmLHbYHVx3JWnSa5nZs/hNeWtca3O+/kO62KBzcHDEAdzTEXI89QfJeWlsryQlVMsMzMbEC+R10KDQd1reoQNyZPxj2tYWkO5DsDttfrupL2yyP5y1zm9hakwxsgqbKaDKP8OLqGep9f0UlJyMktaI2k6U2B34uZtOJ5mwA0WHzNd67Kxcx0jxK3mcyiLI3+HxFFcsQOe8yOF3vamQtAJcC5pJ7d/kppFad+kaPGMj+aRriKrcdLWo8IcE6doXFeRHhtbPHLczzILMQvZg7AWfoFvMs3IxznO90bklRNHY6KCXOlaRLkmxY3DBsB89z81NNqkXwWiFq3B/DuoucMjSoOZ5vnjHI76ivutYn9ncmHNIMJxmgIBiDzT4j5X3HT6LsOOVzwHEXtta5Okdu0mj8VN01ssi2naNH0/hfW2whsgiIBv3pLN1XWrXLI0rU8KcO/Czcw3DoxY+oW+Rc1XdlZmkgWT8lD8SZbHkyTOu5dNz3Rt5cOYgebCjYMhuTySQSNIAG7SB0+C7EDgbN36LNE1rgHOA79QvHiSJf5TfwaGW+GwkOojZcDzEhzTZ87WHiAeLreaWucGiYgAHbYAdPkoJgBbRc713KzuaTpI2RhKSTss5J3ADndYG25WqZcjZeJc3OAcGshETGjy6kDz3+5KthiNO5Fj1XIYrarlaT8F5+TekJYXJU2V+G9zG8glpzzZcex8/l2CmZMsYwJYIiSXM5W0Ceu1rIMdrSKaACfJZmQsAO23lSPI38EYcZRd2YXzxMiiiha7kY0NAogUBQXyKb3rLHg+YIUowtsGgvpiaTdKFs1kKWWV8T4nCg53MN7rr/ADWKJ08bSGhp3slTXRC+m64iI3VbFeBSrwgeC97i+QBxuxfQLIIidrA9FObGOi5sx7PSkDm36QG4wOx/RZm4YG9D5i1MEJaaq/WlzoAnv6V0QjafpGEbowCGAj0HRZoWNkNOpo9RRXMnfl7lch0t3ZSI/wDhHzII42czRRG9hY8bLyA0cmTKK7cxXLOc7lHKLHktZ1fPmwT+IZjzSw2efwhzFh8yBuR6qcdlcoq7aNpdPnR80kWR+bcggG/soMvEGTjvP4nHjlaDuW7EevktQHH2lloaMh1jYgggg/BRcri3BzLEUzTfUu2U1H7RVKMGbb7QX42q+zXXRjSCSSXAlPIdnWGk9F4fXsNuoYc+mGMStI5S00eoPULzB7Q+H3cP8QSQsH+yzXJA7/hvp8l0+E11cTk87G4tM1tERbTAEREAREQBERAEREAREQBERAEREAREQHoX+EfN8TF1jSy7dkjJ2t+Io/oF3+X3kBra2JcT6D+tLyn/AAt6iMP2iyYrnhozMORjb7uBDh+hXqPHc5pmjl5S4H8wFAggfva5/KVM6XHy/wDVRh1bU3RPjgYR4j7NHoAOpKrmfiMyWMGMNiLuUvYbNnoaromRjGfMfzEl3IGhw6hl7n5fyVxgNjY4NjIc0C7B3PkufLejo4JKt+mKHDGJknLLRI6IARg0LP8APp9ArrCMM0QyJ+YSE25pbX/dVedl4cMQZkxvL2v5muaN+vbfsqTL4lcA+LEBcA4gOdsAfUDyVXVt6L8rj0d+m6ajqeFis5YSwy1QBPRVuEzJy5/FMvO27I6D6qh0qEanUuTJI5wFgiwAfRXGJjz4gH4XLNWLJALR5791fCNuzh5GrNjY8Qsojl2rfouL8guADDZA62oLM+Z8wiki8Vl9W7KfDFEWmQczfQgjdWP/AEeQj9mEtdkv8AuIgYOaU3uR2HzUx8hkcAB7o226ABVuoajiYYijc54a53vkC7P8lKwcnClFxZbQT2Ox+68js0pUiax7R/mohZGyNc8NIuzXmsfhW0HmDgSpGLE1g8QtogqxIXSMrD7x5QaB6Lm4naxsTuuBcGMLr7dPVRZ8pz3ho2HwU3orpsnMcw9Ggm6UsENjsigBvaqsTmL2i7JN7rlxJlDG0LLlLy2oyBXmdh+oUZPRKMbkkaKH+PLLK7fxJHOv4kkLmWtJI2A7+qhxTNbEADsAAFkOS0gUVz2tnYi6SSJFAChVBfQPe+G6j+O0C7QZDTZ5tyvKJWSQ1vU7r7QB2GyimcG/eQZAvcpQbJZbsCF9AG99VGE7QOu3mjsloHUbL0WZngeQC4hoIIuqWAZgJA5gfipDX2LBHzRIi2cWe6dxRUlhHkopc69z17hc2SjsSSPoU62edqJL6DelrA948qK4zveGmgB6lRbkNFxBs9B0C9UTxybJQNHmI3XMvBB/LfmQogl5mECwQvniiveJPxXtHqsZkoawucKPYhVUEvNkEloIIqz3U/Pex8J5XNJ8ui1bifUpdM0aXPhglm8OiWsFmromvRSjG2JypbLPUeH9DzpDNk6fjOlI3fyAOPxI3VBkcCaGHGSOOWAE2fDkI/WwqLSPaJiZJAkLmfELYouKcDIiIErTY6WrUpJ0yhuEkUebwhmthfNpeoDKZH+eFx5ZGN7E9iPUV8F57421/J13VOaYBsePccbR5X1PqvTGk5okz3ZGPIeTlI+PovM/tB0iXReLM7EkbTHSGSMjoWuNhdHifJyua5aXwUCIi2GAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgL72fav/AGFxppWqE02DJaX/APKTR+xXtTIkHiQ5DCDFK0NJHSuoP6/ULwavW3sM4kj4n9n2NjTPLsvBH4ebffb8rvp+iy8qFpS+i7FKnR2HE2JpifuXAlhJ8j/UBYdVzW4rxJEGlwBFE0D03+yhHMcGSQOeGzM3APcjcH4dFCOTHmSn8RsQN2nYhcxxtm+GXrshPzsrU5HMc4xxNNEN3JKtdO0Fxa2QsY0bEsde/qSO6gRloy3GNzYjjsHUWDdmyPh+qtcCfOlc0cji09TfLfoL3A+6nGFIpyZZTdsnQNc+VsApgFh4abHToD5+iuMSJz2hhLeUbAVVBRIZmxRESRNaAPygg9FGl4hxMI8oLw1wskjof5L2ijd7Nnxo8fFaeV7b+OyrtX1ZzXGGJzDtuR2Wq53FEc5LIJR0s04HbzUGHLkyHtBJpx3NLxv4RdBNFnLkyT5QJaHNZ0FjqpbCyUeGWOaT126rDiY7jIC0Chv0tXOMREAKHW99x90UaRojtnLT8eWIEtyZYhVgNJAPyVkNRlxmAHKbIQLpwBv5qtzdQxw8gvAAFXWwVVLNzuJje54Pe7BU1pHr2X0/EbgwmTHa5o2tpqz919x+IdOe4Gbxsfz5gCPqFrjmyOJDY3OJINAA91bYummUAysAaereibPHRsunahg5EoOPkwyE7U1wJPyWve1TVGYuFjYDSA6Z/iH/AJW/1I+issfSomN/u3chHaqsrqL2h6ucviSWKKZ0kOMPBY4m7IJJ+5P0Vcm2qLcUVaZPiz9gebsuTtQAIIdYPX0WrRZbg0Ub27rn+JNXzbhVdTapm0jUA7ckr6dQbQPNutUOYWgU6ljl1FoG7+i86D8iRt41Jo2JXE6mGiy7otIl1Zov3yoc+s1YDyixWePMjfpdca0XzfK1Ek4kjYd3jb4LrfP16GIXLkNZtfvEAn5KnyuIGuFxCWQEbECgVbHBfwVS5KR2wOL8Njh4hA32pTm8Y4kzAyF2/maXQ8ms5BO8BA9SpGJrcjXW5rmjzabI+Sk+PS2QXKTdHoDC12OUAOIPzVlHmsduwjf1XQ2FxHVBmSA49nGj91f6bxFlscOaU/AqDw0SWZM7jiymu2cdisrDG6+Uiz1XXeFrr5G8znkH0Kmxa6Wm3Od8lW4NFimmbhL7hcQOqwsmYbF2fIqowtcZJQe6wVNlnx+QSxOAJG+686tek00Y9RymEch5W137rBFJGWgAg0qbXIMrVMaeHT52wTlp8N7hYv19CtHbrevcPZn4TXoXxPN8jiLY8Dawe4VsYWrK5Tp78Nt4p4I0PWI5JYYxh5hJd4sWwJ72Oh+IorqzV9C1zRskRf41EkFhJBHmF2LicV40sQJlrazuNlzgEWqzPMjg6Mig4Hob2I+AV2NtaZmypVcfTTOHuIZmR04v5m7FrhuFqftpdHlt03UdhLJzsIveh+y2f23wQaFpWNlYLhBk5Lwwchp1AWdvp9V0tl5eTlyCTKnkmcNgXm1vw46/Y52bP2j1owIiLQZQiIgCIiAIiIAiIgCIiAIiIAiIgCIiALf/AGGcWnhbjKITycuDnVBPZoNs+675H9VoCA0bC8aUlTHh7V1ipXiaF9Pq2OG9/wBFVvy2NBjzWFriKZI01Rrz/mus/Zb7RYcvSYtK1XJ8PNx28kb3naVvb/8AJbbqGbHlSn+9AHh02+gJ6rnSxOL2aFK1aL06jjRZPizTsaOQC3Gw4joSAaH1SfjH8OR4E8Tm9+UC/va1XF0wZhMT5RzAWAehHms0HDTgwzhzfcNOaN7A615EfdOiPLZb5XFWdnA+FLKO3QAH51+iit/GZALvEfI8CxuSPgrrTOGmnlMhBHUC+qvMbS4ICIm8jQSC4kXt5KDpeHsbbNd0mOXJePEjMRFNot/cLbdN01sdPc0t9DuCuGVLiYBc48u5sFo6bDqFXu1qY2YJ+a9uXqFVezVGOjZ4/CxA6RzaPYg9VByNRcSeQ35BUjJdTy3g+89o/wAoNAH0Vtpul5Mrw+SCUAnzU7stWkYnPEh5XAlxIsBWGFpz5Wjla5g2I2IJV5pujxNAc5oc47DaqVxFhxRDcVW2y9og5Fdp2H4YHNC07CyAb+qtoYIXOHVtdQVyY5rfyu2HbzUqJjzFzjls7kHqV42glezW+PtUi0HhzIy45qyHDw4QdyXnvXoLPyXn9+Q0kve63Ekkk7knqti9uvF8WbxGdMhf4cGnAsks7GQnc/LYfVdWT62HnlhEkh6e6NvuoqLZpjJRRtr8yJh6j6qNPqzQDRAWq+NqWQP7uNsYPdxsrG7S82Ygy5MhHkDQ+ykoL5Z5+RvwusvXY4wQ6ZjQPNwH2VVLxFGbEbpJPRrD+6Y/D7CeZw5j5kWrKDRGtAAYB8l7+qI/uykOq6hMT4eMQD3cb+y4eDqeSD4s7mg9miv6ra4NKqqb86XJ2A5oNBO6XiPfxuts1H+xmuBLwXO8ySSr7hbTIJnuwnMuQAujJ7juPl+hUz8G+iQLKj5LsjS3w6lC338aQPquo6EfMEheqbeiMsdbLbL4UjIEgisEdK6KuyOF2cpqIgj4rtzRmYetaPFl4pDoMmPnjPQg1RB8je3yUaTSyWlrm2WbGhupRn8MplCto6SzOHpGE8jXCuxCixQ6nhkcpeW+RFgfVdxZ+iFw5mgcvclUM+BjxvLXgu3rYbKTaejxJo0iHWM6I14fMfQkWrGHiCVrQJWvjPkaKvMrS4AOaOMC+9KoytMb15d/gouKZOM2jnFr7gQWSltnoQQrXF4kkcA2WUgeYN2tZnwXN/KAPSlwZByj+8c0b9tyq3BFn5mjsvSNax6HLI01vud1N1eTTddw3YmoRMljAJBOxYfMHsurTkNgaOUuBHQ3uVKxtWzGsaWk8jti4gml4se9E1nTVMqtTxW6Rqc8Ecjnxsf7rjsCD0P/AGV/omrOjiEbSA0jrW3xWHieHDdp8WqZs4x4Yo+UucPzfAdybXUetcS5OTz42E98GNzHofed8StePF22zBLkdG0i89tevRavxQzGxMgTYmHC1jSDYLyLcfrt8loaEkmz1RbUqMTduwiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgPrSWuDmkgjcELZNB4t1fEljgfKcqIkN5ZDZ+q1pSNN/wD1HG/91v6heNJ6YR6NytI4gwYYshsbpI+QPthvlBF79/smBxBPC8tyIntBFOsLslv+C3/2I/0Wg8bf+eH/ACrmOTOjkwqJb6PxPCIGRul5nMAHMD1A6H6K2x9U/FOc+PKY2x0Iv911EP8Azf1W3aR/gt+I/RRl4VxikzfMTGhneXSzeI49CTY+QV9peg4rmBzmxts7ANpa1oP/APH8B+q3fTehVZqiSMHTMGA34RH/ABBXMAgY0BoaRVgKsZ/hLJidHKSIyJ5nbHsA0EnoQuJyOexJsO1bgqHP3+C443UfFTRAsscRvdYDevmsGq5MmLiSvhdb6IaPU7D9Vxi/838z+hUbXf8AyjfiFVMuxbOg+O9O0OLUZcfCibNO8k5MrgQ4PJBIu9ze5JWtMwsSIABrR5qx4n/9Qan/APdSf9RVRP8AkPwUo+FkvTO12Mw0HNHosoyINgC0qkl/L81xi6r1niZs8ORjirI2+imRZMBoW1asz86lR/mCgyyLNnGVjnu0Er46aB21t37KiaubeqUTLZ8mO0fmAKiZ7seXEfEaIIINqG/usM/+H8kXoZsXsT15uDqEvDudO1sMji/ELzsHd2DyurA87812rqMTfHDsWFzi4buApt91534a/wDV+nf/AHbP1C9OR/4Df9dl6/SiXhpmXpuR4rpDK912eU9B6AKnz9KkcSQHF3wW8ZnT5lVeT+xViZRRpc+DkNIHLd7/AAVZl4sm4AJ9QOi3DJ/O74qon/K74lephmnZmJO4jr8OiinTZjuGkfBbPk9visbeg+Km1oi/DXotByMhwLw4gGxvSz8VcR6LwdphxuWHL1B4FQda/wCbyW14X+EfivOntC/9XZ//ALrv1V2CKb2ZMzaeiNxLxFqnEGY7Iz8gubdsibsxnoAqhEWsoCIiAIiIAiIgCIiAIiID/9k=" alt="Sadia Akter Choity">
+      <div class="photo-badge badge-top">JMC — DIU</div>
+      <div class="photo-badge badge-bot">Journalist &amp; Media Student</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="warm" id="about">
+  <div class="sec-head">
+    <div class="sec-num">01</div>
+    <div class="sec-info">
+      <div class="sec-label">Who I Am</div>
+      <h2 class="sec-title">About <em>Me</em></h2>
+    </div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I am Sadia Akter Choity, a dedicated student of Journalism, Media and Communication at Daffodil International University, Bangladesh. My passion lies in uncovering stories that matter and delivering them with clarity, fairness, and lasting impact.</p>
+      <p>I believe responsible journalism has the power to shape society and give voice to those who are unheard. I am committed to building a career that upholds the highest standards of media ethics, public service, and truthful reporting.</p>
+      <p>Beyond academics, I am an active communicator across digital platforms, continuously strengthening my storytelling and media skills to connect with audiences in meaningful ways.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat" onclick="openStatModal('JMC')">
+        <div class="stat-val">JMC</div>
+        <div class="stat-lbl">Department of Journalism, Media &amp; Communication</div>
+      </div>
+      <div class="stat" onclick="openStatModal('DIU')">
+        <div class="stat-val">DIU</div>
+        <div class="stat-lbl">Daffodil International University, Dhaka</div>
+      </div>
+      <div class="stat" onclick="openStatModal('BD')">
+        <div class="stat-val">BD</div>
+        <div class="stat-lbl">Based in Bangladesh — future global journalist</div>
+      </div>
+      <div class="stat" onclick="openStatModal('✦')">
+        <div class="stat-val">✦</div>
+        <div class="stat-lbl">Aspiring media professional &amp; ethical journalist</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="light" id="skills">
+  <div class="sec-head">
+    <div class="sec-num">02</div>
+    <div class="sec-info">
+      <div class="sec-label">Expertise</div>
+      <h2 class="sec-title">Core <em>Skills</em></h2>
+    </div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="sk-icon">📰</span>
+      <div class="sk-title" onclick="openSkillModal('News Reporting')" style="cursor:pointer">News Reporting</div>
+      <div class="sk-desc">Gathering, verifying and presenting accurate news with clarity and journalistic integrity across all media formats.</div>
+    </div>
+    <div class="skill-card">
+      <span class="sk-icon">✍️</span>
+      <div class="sk-title" onclick="openSkillModal('Feature Writing')" style="cursor:pointer">Feature Writing</div>
+      <div class="sk-desc">Crafting in-depth, narrative-driven articles and stories that engage, inform and inspire audiences.</div>
+    </div>
+    <div class="skill-card">
+      <span class="sk-icon">📱</span>
+      <div class="sk-title" onclick="openSkillModal('Digital Media')" style="cursor:pointer">Digital Media</div>
+      <div class="sk-desc">Content creation and strategic communication across social media and digital platforms for maximum reach.</div>
+    </div>
+    <div class="skill-card">
+      <span class="sk-icon">🎙️</span>
+      <div class="sk-title" onclick="openSkillModal('Broadcast Journalism')" style="cursor:pointer">Broadcast Journalism</div>
+      <div class="sk-desc">Understanding of TV and radio journalism, scripting, presenting, and media production fundamentals.</div>
+    </div>
+    <div class="skill-card">
+      <span class="sk-icon">🔍</span>
+      <div class="sk-title" onclick="openSkillModal('Research & Analysis')" style="cursor:pointer">Research &amp; Analysis</div>
+      <div class="sk-desc">Deep research skills to support accurate, evidence-based, well-sourced reporting on any topic.</div>
+    </div>
+    <div class="skill-card">
+      <span class="sk-icon">🌐</span>
+      <div class="sk-title" onclick="openSkillModal('Media Ethics')" style="cursor:pointer">Media Ethics</div>
+      <div class="sk-desc">Strong foundation in journalistic ethics, responsible media conduct, and public interest principles.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DIU SECTION -->
+<section class="diu-section" id="diu">
+  <div class="sec-head">
+    <div class="sec-num">03</div>
+    <div class="sec-info">
+      <div class="sec-label">My University</div>
+      <h2 class="sec-title">Daffodil <em>International</em></h2>
+    </div>
+  </div>
+
+  <div class="diu-media-wrap">
+
+    <!-- LEFT: CSS Animated SVG Slideshow -->
+    <div>
+      <!-- Auto-playing Campus Video -->
+      <div class="diu-video-wrap" id="diuVideoWrap">
+        <!-- Streamable Embed — autoplay muted loop -->
+        <iframe
+          src="https://streamable.com/e/g944tm?autoplay=1&muted=1&loop=1"
+          style="position:absolute;inset:0;width:100%;height:100%;border:none;display:block;"
+          frameborder="0"
+          scrolling="no"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <!-- Cinematic overlay gradient — sits above iframe bottom half only -->
+        <div style="position:absolute;bottom:0;left:0;right:0;height:45%;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,transparent 100%);pointer-events:none;z-index:2;"></div>
+
+        <!-- Bottom caption -->
+        <div style="position:absolute;bottom:1.2rem;left:1.5rem;z-index:3;pointer-events:none;">
+          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(212,169,64,0.9);font-weight:600;margin-bottom:0.25rem;">Daffodil International University</div>
+          <div style="font-size:1.1rem;font-family:'Cormorant Garamond',serif;font-style:italic;color:rgba(255,255,255,0.92);">Aerial Campus View — Birulia, Savar</div>
+        </div>
+      </div>
+
+      <div class="diu-video-meta">
+        <div class="diu-live-dot"></div>
+        <span>DIU Campus — Drone Footage · Auto Playing</span>
+        <a href="https://www.youtube.com/watch?v=nlV0byZxMWE" target="_blank" class="diu-yt-link">↗ YouTube</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Stats & Features -->
+    <div>
+      <div class="diu-info-grid">
+        <div class="diu-stat-card">
+          <div class="diu-stat-val">30+</div>
+          <div class="diu-stat-lbl">Years of Academic Excellence</div>
+        </div>
+        <div class="diu-stat-card">
+          <div class="diu-stat-val">28K+</div>
+          <div class="diu-stat-lbl">Students Enrolled</div>
+        </div>
+        <div class="diu-stat-card">
+          <div class="diu-stat-val">80+</div>
+          <div class="diu-stat-lbl">Departments & Programs</div>
+        </div>
+        <div class="diu-stat-card">
+          <div class="diu-stat-val">60+</div>
+          <div class="diu-stat-lbl">Student Clubs & Activities</div>
+        </div>
+      </div>
+      <div class="diu-features">
+        <div class="diu-feature">
+          <div class="diu-feature-icon">🏛️</div>
+          <div class="diu-feature-text"><strong>Main Campus</strong>Green Smart City — Birulia, Savar, Dhaka</div>
+        </div>
+        <div class="diu-feature">
+          <div class="diu-feature-icon">🎓</div>
+          <div class="diu-feature-text"><strong>My Department</strong>Journalism, Media & Communication (JMC) — BSS Program</div>
+        </div>
+        <div class="diu-feature">
+          <div class="diu-feature-icon">📡</div>
+          <div class="diu-feature-text"><strong>Media Facilities</strong>Broadcast studio, photo lab, digital newsroom & media lab</div>
+        </div>
+        <div class="diu-feature">
+          <div class="diu-feature-icon">🌿</div>
+          <div class="diu-feature-text"><strong>Green Campus</strong>Award-winning eco-smart campus with 300+ acres of greenery</div>
+        </div>
+        <div class="diu-feature">
+          <div class="diu-feature-icon">🏆</div>
+          <div class="diu-feature-text"><strong>Rankings</strong>Top private university in Bangladesh — UGC Accredited</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="diu-tagline">"Where Knowledge Meets Innovation — Daffodil International University"</p>
+</section>
+
+<!-- EDUCATION -->
+<section class="warm" id="education">
+  <div class="sec-head">
+    <div class="sec-num">04</div>
+    <div class="sec-info">
+      <div class="sec-label">Academic Journey</div>
+      <h2 class="sec-title">My <em>Education</em></h2>
+    </div>
+  </div>
+  <div class="edu-list">
+    <div class="edu-item">
+      <div class="edu-year">January 2025 — December 2028</div>
+      <div>
+        <div class="edu-deg">Bachelor of Social Science (BSS)</div>
+        <div class="edu-school">Daffodil International University, Dhaka, Bangladesh</div>
+        <div class="edu-note">Department of Journalism, Media and Communication (JMC). Core studies in news reporting, broadcast journalism, media ethics, digital communication, and research methodology.</div>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-year">HSC</div>
+      <div>
+        <div class="edu-deg">Higher Secondary Certificate</div>
+        <div class="edu-school">Bangladesh</div>
+        <div class="edu-note">Completed higher secondary education with a strong academic foundation prior to pursuing journalism studies at university level.</div>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-year">SSC</div>
+      <div>
+        <div class="edu-deg">Secondary School Certificate</div>
+        <div class="edu-school">Bangladesh</div>
+        <div class="edu-note">Completed secondary school education, building core academic and communication skills.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MY WORK -->
+<section class="work-section" id="work">
+  <div class="sec-head">
+    <div class="sec-num">05</div>
+    <div class="sec-info">
+      <div class="sec-label">Published Work</div>
+      <h2 class="sec-title">My <em>Articles</em></h2>
+    </div>
+  </div>
+  <div class="work-grid">
+    <div class="article-card" onclick="openArticleModal(0)">
+      <div class="article-img-placeholder">📰</div>
+      <div class="article-body">
+        <span class="article-tag">News Report</span>
+        <div class="article-title">Digital Literacy Gap Widens Among Rural Youth in Bangladesh</div>
+        <div class="article-meta">
+          <span>📅 March 2025</span>
+          <span>✍️ Sadia Akter Choity</span>
+        </div>
+        <div class="article-excerpt">An investigative report on how access to internet education remains unequal across Bangladesh's rural and urban divide, with firsthand accounts from students in Rajshahi and Khulna divisions.</div>
+        <span class="article-read">Read Full Article →</span>
+      </div>
+    </div>
+    <div class="article-card" onclick="openArticleModal(1)">
+      <div class="article-img-placeholder">✍️</div>
+      <div class="article-body">
+        <span class="article-tag">Feature</span>
+        <div class="article-title">The Silent Storytellers: Women Journalists Reshaping Bangladesh Media</div>
+        <div class="article-meta">
+          <span>📅 August 2025</span>
+          <span>✍️ Sadia Akter Choity</span>
+        </div>
+        <div class="article-excerpt">A long-form feature profiling five pioneering women in Bangladeshi journalism — from print veterans to digital-first reporters — and the challenges they navigate in a rapidly evolving media landscape.</div>
+        <span class="article-read">Read Full Article →</span>
+      </div>
+    </div>
+    <div class="article-card" onclick="openArticleModal(2)">
+      <div class="article-img-placeholder">🎙️</div>
+      <div class="article-body">
+        <span class="article-tag">Media Analysis</span>
+        <div class="article-title">Social Media vs. Traditional News: How Gen Z Gets Informed in Dhaka</div>
+        <div class="article-meta">
+          <span>📅 December 2025</span>
+          <span>✍️ Sadia Akter Choity</span>
+        </div>
+        <div class="article-excerpt">Based on a survey of 200 university students across Dhaka, this analysis explores shifting news consumption habits among Generation Z and what it means for the future of journalism in Bangladesh.</div>
+        <span class="article-read">Read Full Article →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="light" id="contact">
+  <div class="sec-head">
+    <div class="sec-num">06</div>
+    <div class="sec-info">
+      <div class="sec-label">Let's Connect</div>
+      <h2 class="sec-title">Get in <em>Touch</em></h2>
+    </div>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <div class="contact-intro">
+        <p>Whether you want to collaborate, have a question, or simply want to connect — I would love to hear from you. Reach out via any of the channels below.</p>
+      </div>
+      <div class="contact-items">
+        <a href="mailto:sadiaakterchoity10@gmail.com" class="contact-item">
+          <div class="ci-icon">✉️</div>
+          <div>
+            <div class="ci-label">Email Address</div>
+            <div class="ci-val">sadiaakterchoity10@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/taohi.tafi" target="_blank" class="contact-item">
+          <div class="ci-icon">📘</div>
+          <div>
+            <div class="ci-label">Facebook</div>
+            <div class="ci-val">facebook.com/taohi.tafi</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/sadia-akter-choity-6a6b81406" target="_blank" class="contact-item">
+          <div class="ci-icon">💼</div>
+          <div>
+            <div class="ci-label">LinkedIn</div>
+            <div class="ci-val">Sadia Akter Choity</div>
+          </div>
+        </a>
+        <div class="contact-item" style="cursor:default">
+          <div class="ci-icon">🎓</div>
+          <div>
+            <div class="ci-label">University</div>
+            <div class="ci-val">Daffodil International University — JMC Dept.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="fg"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+          <div class="fg"><label>Your Email</label><input type="email" placeholder="email@example.com"></div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" placeholder="What is this about?"></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Write your message here..."></textarea></div>
+        <button class="send-btn">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-brand">Sadia Akter Choity</div>
+  <div class="f-copy">Dept. of Journalism, Media &amp; Communication — Daffodil International University, Bangladesh</div>
+</footer>
+
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeAllModals()">✕</button>
+    <div class="modal-icon" id="modalIcon"></div>
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-subtitle" id="modalSubtitle"></div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-tags" id="modalTags"></div>
+  </div>
+</div>
+
+<script>
+const statData = {
+  JMC: {
+    icon: "🎓",
+    title: "Journalism, Media & Communication",
+    subtitle: "Department — Daffodil International University",
+    body: `<p>The Department of Journalism, Media and Communication (JMC) at Daffodil International University is one of Bangladesh's leading programs for aspiring media professionals.</p>
+    <p style="margin-top:0.8rem">The curriculum covers:</p>
+    <ul>
+      <li>Print, Broadcast & Digital Journalism</li>
+      <li>Media Ethics & Law</li>
+      <li>Communication Theory & Research</li>
+      <li>Feature Writing & Investigative Reporting</li>
+      <li>Media Production & Photography</li>
+    </ul>`,
+    tags: ["Journalism", "Media Studies", "Communication", "BSS Degree"]
+  },
+  DIU: {
+    icon: "🏛️",
+    title: "Daffodil International University",
+    subtitle: "Ashulia, Dhaka, Bangladesh",
+    body: `<p>Daffodil International University (DIU) is one of Bangladesh's leading private universities, consistently ranked among the top universities in the country by UGC and international bodies.</p>
+    <p style="margin-top:0.8rem">Key facts:</p>
+    <ul>
+      <li>Established in 2002, accredited by UGC Bangladesh</li>
+      <li>25,000+ students across 60+ programs</li>
+      <li>Modern campus in Ashulia with innovation labs</li>
+      <li>Strong industry partnerships & job placement</li>
+      <li>Active in global academic exchanges</li>
+    </ul>`,
+    tags: ["Private University", "Top Ranked", "UGC Accredited", "Dhaka"]
+  },
+  BD: {
+    icon: "🇧🇩",
+    title: "Bangladesh",
+    subtitle: "South Asia's Rising Media Landscape",
+    body: `<p>Bangladesh has a vibrant and rapidly growing media sector, with over 30 national television channels, hundreds of newspapers, and an expanding digital media landscape.</p>
+    <p style="margin-top:0.8rem">The country's media scene:</p>
+    <ul>
+      <li>One of South Asia's most active press environments</li>
+      <li>Growing digital journalism & citizen reporting</li>
+      <li>Strong community radio & rural media reach</li>
+      <li>Active journalist networks and press clubs</li>
+    </ul>
+    <p style="margin-top:0.8rem">As a future journalist from Bangladesh, I aim to contribute to a more informed and empowered society.</p>`,
+    tags: ["Bangladesh", "South Asia", "Media Landscape", "Dhaka"]
+  },
+  "✦": {
+    icon: "✦",
+    title: "Aspiring Media Professional",
+    subtitle: "Vision & Mission",
+    body: `<p>My goal is to become an ethical, impactful journalist who gives voice to the stories that matter — especially those of ordinary people facing extraordinary challenges.</p>
+    <p style="margin-top:0.8rem">My professional values:</p>
+    <ul>
+      <li><strong>Truth:</strong> Accurate, verified, evidence-based reporting</li>
+      <li><strong>Fairness:</strong> Balanced perspectives, no agenda</li>
+      <li><strong>Courage:</strong> Covering difficult stories with integrity</li>
+      <li><strong>Empathy:</strong> Human-centered storytelling</li>
+      <li><strong>Innovation:</strong> Embracing new media formats</li>
+    </ul>`,
+    tags: ["Ethical Journalism", "Media Professional", "Storytelling", "Public Interest"]
+  }
+};
+
+const skillData = {
+  "News Reporting": {
+    icon: "📰",
+    subtitle: "Core Journalism Skill",
+    body: `<p>News reporting is the foundation of journalism. It involves identifying newsworthy events, gathering information through interviews and research, verifying facts across multiple sources, and presenting stories clearly and objectively.</p>
+    <p style="margin-top:0.8rem">Key competencies:</p>
+    <ul>
+      <li>Source identification & interview techniques</li>
+      <li>Fact-checking & verification methods</li>
+      <li>Inverted pyramid writing structure</li>
+      <li>Deadline management & accuracy under pressure</li>
+      <li>Breaking news coverage protocols</li>
+    </ul>`,
+    tags: ["Hard News", "Interviews", "Fact-Checking", "Beat Reporting"]
+  },
+  "Feature Writing": {
+    icon: "✍️",
+    subtitle: "Narrative Journalism",
+    body: `<p>Feature writing goes beyond breaking news — it explores the human stories behind events, offering in-depth context and narrative depth. A great feature informs, entertains, and often changes how readers see the world.</p>
+    <ul style="margin-top:0.8rem">
+      <li>Long-form narrative storytelling</li>
+      <li>Profile writing & personality features</li>
+      <li>Colour pieces & descriptive journalism</li>
+      <li>Research-driven, data-supported features</li>
+    </ul>`,
+    tags: ["Long-form", "Narrative", "Profiles", "In-depth"]
+  },
+  "Digital Media": {
+    icon: "📱",
+    subtitle: "Modern Media Platforms",
+    body: `<p>Digital media has transformed how journalism reaches audiences. From social media storytelling to multimedia packages, today's journalists must be multi-platform creators.</p>
+    <ul style="margin-top:0.8rem">
+      <li>Social media journalism (Facebook, X, YouTube)</li>
+      <li>Content creation & digital copywriting</li>
+      <li>SEO for news articles</li>
+      <li>Audience engagement & analytics</li>
+      <li>Multimedia packages (text + video + infographics)</li>
+    </ul>`,
+    tags: ["Social Media", "Multimedia", "SEO", "Content Creation"]
+  },
+  "Broadcast Journalism": {
+    icon: "🎙️",
+    subtitle: "TV & Radio Journalism",
+    body: `<p>Broadcast journalism brings news to life through audio and visual storytelling. It requires strong on-camera presence, clear scripting, and the ability to communicate complex ideas simply and compellingly.</p>
+    <ul style="margin-top:0.8rem">
+      <li>TV news scripting & presenting</li>
+      <li>Radio journalism & podcasting</li>
+      <li>Video editing fundamentals</li>
+      <li>Live reporting & field production</li>
+      <li>Voiceover & news reading techniques</li>
+    </ul>`,
+    tags: ["Television", "Radio", "Video Production", "Presenting"]
+  },
+  "Research & Analysis": {
+    icon: "🔍",
+    subtitle: "Evidence-Based Journalism",
+    body: `<p>Great journalism is built on rigorous research. This skill ensures that every claim is backed by evidence, every statistic is verified, and every story has the depth that readers deserve.</p>
+    <ul style="margin-top:0.8rem">
+      <li>Academic & documentary research</li>
+      <li>Data journalism & statistics interpretation</li>
+      <li>Freedom of Information (RTI) requests</li>
+      <li>Investigative research techniques</li>
+      <li>Source evaluation & credibility assessment</li>
+    </ul>`,
+    tags: ["Investigative", "Data Journalism", "Research Methods", "Analysis"]
+  },
+  "Media Ethics": {
+    icon: "🌐",
+    subtitle: "Responsible Journalism",
+    body: `<p>Media ethics is the moral compass of journalism. It guides decisions about what to publish, how to treat sources, and how to serve the public interest without causing unnecessary harm.</p>
+    <ul style="margin-top:0.8rem">
+      <li>Press freedom & journalist safety</li>
+      <li>Privacy vs. public interest decisions</li>
+      <li>Handling sensitive stories (trauma, crime, minors)</li>
+      <li>Avoiding bias & conflicts of interest</li>
+      <li>Bangladesh Press Council guidelines</li>
+    </ul>`,
+    tags: ["Ethics", "Press Freedom", "Public Interest", "Responsibility"]
+  }
+};
+
+const articleData = [
+  {
+    icon: "📰",
+    title: "Digital Literacy Gap Widens Among Rural Youth in Bangladesh",
+    subtitle: "News Report · Published March 2025 · The Campus Voice, DIU",
+    body: `<p>This investigative report examined the growing digital divide between urban and rural youth in Bangladesh, focusing on access to internet-based education tools following the expansion of government digital programs.</p>
+    <p style="margin-top:0.8rem"><strong>Key findings from the report:</strong></p>
+    <ul>
+      <li>Only 34% of rural students in surveyed areas had reliable internet access for educational purposes</li>
+      <li>Urban counterparts were 2.8× more likely to use digital learning platforms regularly</li>
+      <li>Female students in rural areas faced additional barriers including family restrictions on device use</li>
+      <li>Several NGOs operating in Rajshahi division reported increasing demand for offline learning materials</li>
+    </ul>
+    <p style="margin-top:0.8rem">The report featured firsthand interviews with students, teachers, and local education officials, and was submitted as part of the JMC department's undergraduate journalism practicum.</p>`,
+    tags: ["Investigative", "Education", "Digital Divide", "Bangladesh"]
+  },
+  {
+    icon: "✍️",
+    title: "The Silent Storytellers: Women Journalists Reshaping Bangladesh Media",
+    subtitle: "Long-form Feature · Published August 2025 · JMC Department Journal",
+    body: `<p>This feature profiled five women journalists across different media sectors in Bangladesh — from veteran print reporters to young digital-first correspondents — exploring how they navigate a profession historically dominated by men.</p>
+    <p style="margin-top:0.8rem"><strong>Voices featured in the piece:</strong></p>
+    <ul>
+      <li>A senior crime reporter at a national Bangla daily with 15 years' experience</li>
+      <li>A 26-year-old YouTube journalist covering women's rights stories</li>
+      <li>A community radio presenter from Khulna reaching thousands of rural listeners</li>
+      <li>Two JMC graduates now working at leading media houses in Dhaka</li>
+    </ul>
+    <p style="margin-top:0.8rem">The piece explored themes of workplace harassment, editorial independence, safety in the field, and the inspiration these women provide for the next generation of Bangladeshi journalists.</p>`,
+    tags: ["Feature", "Women in Media", "Bangladesh", "Gender"]
+  },
+  {
+    icon: "🎙️",
+    title: "Social Media vs. Traditional News: How Gen Z Gets Informed in Dhaka",
+    subtitle: "Media Analysis · Published December 2025 · DIU Research Digest",
+    body: `<p>Based on a structured survey of 200 university students across four institutions in Dhaka, this analysis explored how Generation Z consumes news — and what that shift means for traditional journalism.</p>
+    <p style="margin-top:0.8rem"><strong>Key survey findings:</strong></p>
+    <ul>
+      <li>78% of respondents said Facebook was their primary news source</li>
+      <li>Only 12% regularly read a print newspaper</li>
+      <li>67% expressed concern about misinformation but admitted difficulty identifying it</li>
+      <li>YouTube news content was trusted more than TV news by a significant margin</li>
+      <li>85% wanted journalists to be more active on social media</li>
+    </ul>
+    <p style="margin-top:0.8rem">The analysis concluded that digital-native journalism skills are no longer optional — they are essential for reaching the audiences of tomorrow, and media education must adapt accordingly.</p>`,
+    tags: ["Media Analysis", "Gen Z", "Digital News", "Survey Research"]
+  }
+];
+
+function openStatModal(key) {
+  const d = statData[key];
+  if (!d) return;
+  document.getElementById('modalIcon').textContent = d.icon;
+  document.getElementById('modalTitle').textContent = d.title;
+  document.getElementById('modalSubtitle').textContent = d.subtitle;
+  document.getElementById('modalBody').innerHTML = d.body;
+  document.getElementById('modalTags').innerHTML = d.tags.map(t => '<span class="modal-tag">'+t+'</span>').join('');
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function openSkillModal(title) {
+  const d = skillData[title];
+  if (!d) return;
+  document.getElementById('modalIcon').textContent = d.icon;
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalSubtitle').textContent = d.subtitle;
+  document.getElementById('modalBody').innerHTML = d.body;
+  document.getElementById('modalTags').innerHTML = d.tags.map(t => '<span class="modal-tag">'+t+'</span>').join('');
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function openArticleModal(idx) {
+  const d = articleData[idx];
+  document.getElementById('modalIcon').textContent = d.icon;
+  document.getElementById('modalTitle').textContent = d.title;
+  document.getElementById('modalSubtitle').textContent = d.subtitle;
+  document.getElementById('modalBody').innerHTML = d.body;
+  document.getElementById('modalTags').innerHTML = d.tags.map(t => '<span class="modal-tag">'+t+'</span>').join('');
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeAllModals();
+}
+function closeAllModals() {
+  document.getElementById('modalOverlay').classList.remove('open');
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeAllModals(); });
+</script>
+
+<script>
+// Force full viewport when inside iframe (Google Sites, Messenger etc)
+(function(){
+  function forceFullScreen(){
+    var s = document.documentElement.style;
+    s.setProperty('width','100%','important');
+    s.setProperty('max-width','100vw','important');
+    s.setProperty('min-height','100vh','important');
+    s.setProperty('overflow-x','hidden','important');
+
+    var b = document.body.style;
+    b.setProperty('width','100%','important');
+    b.setProperty('max-width','100vw','important');
+    b.setProperty('min-height','100vh','important');
+    b.setProperty('margin','0','important');
+    b.setProperty('padding','0','important');
+
+    // Tell parent iframe to resize if possible
+    if(window.parent && window.parent !== window){
+      try{
+        var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        window.parent.postMessage({type:'resize', height:h, width:'100%'},'*');
+        // Google Sites specific postMessage
+        window.parent.postMessage(JSON.stringify({sentinel:'amp',type:'embed-size',height:h}),'*');
+      }catch(e){}
+    }
+  }
+  forceFullScreen();
+  window.addEventListener('load', forceFullScreen);
+  window.addEventListener('resize', forceFullScreen);
+  window.addEventListener('orientationchange', function(){ setTimeout(forceFullScreen, 300); });
+
+  var observer = new MutationObserver(forceFullScreen);
+  observer.observe(document.body, {childList:true, subtree:true, attributes:true});
+})();
+</script>
+</body>
+</html>
