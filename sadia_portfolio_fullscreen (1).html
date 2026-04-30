@@ -1272,39 +1272,52 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') closeAllModals(
 </script>
 
 <script>
-// Force full viewport when inside iframe (Google Sites, Messenger etc)
+// ── GOOGLE SITES IFRAME AUTO-RESIZE ──
 (function(){
-  function forceFullScreen(){
-    var s = document.documentElement.style;
-    s.setProperty('width','100%','important');
-    s.setProperty('max-width','100vw','important');
-    s.setProperty('min-height','100vh','important');
-    s.setProperty('overflow-x','hidden','important');
+  // Make html/body fill full width always
+  function setFullWidth(){
+    document.documentElement.style.cssText += ';width:100%!important;max-width:100%!important;overflow-x:hidden!important;';
+    document.body.style.cssText += ';width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;overflow-x:hidden!important;';
+  }
 
-    var b = document.body.style;
-    b.setProperty('width','100%','important');
-    b.setProperty('max-width','100vw','important');
-    b.setProperty('min-height','100vh','important');
-    b.setProperty('margin','0','important');
-    b.setProperty('padding','0','important');
-
-    // Tell parent iframe to resize if possible
+  // Send height to Google Sites parent so iframe expands to full content
+  function sendHeight(){
+    setFullWidth();
+    var h = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
     if(window.parent && window.parent !== window){
       try{
-        var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-        window.parent.postMessage({type:'resize', height:h, width:'100%'},'*');
-        // Google Sites specific postMessage
+        // Standard postMessage
+        window.parent.postMessage({type:'resize', height:h},'*');
+        // Google Sites / AMP format
         window.parent.postMessage(JSON.stringify({sentinel:'amp',type:'embed-size',height:h}),'*');
+        // iFrame Resizer format
+        window.parent.postMessage('[iFrameSizer]message:'+h+':0:bodyOffset','*');
       }catch(e){}
     }
   }
-  forceFullScreen();
-  window.addEventListener('load', forceFullScreen);
-  window.addEventListener('resize', forceFullScreen);
-  window.addEventListener('orientationchange', function(){ setTimeout(forceFullScreen, 300); });
 
-  var observer = new MutationObserver(forceFullScreen);
-  observer.observe(document.body, {childList:true, subtree:true, attributes:true});
+  // Run immediately, on load, and repeatedly for 10 seconds to catch lazy-loaded content
+  sendHeight();
+  window.addEventListener('DOMContentLoaded', sendHeight);
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  window.addEventListener('orientationchange', function(){ setTimeout(sendHeight,400); });
+
+  // Poll every 500ms for first 10 seconds
+  var count = 0;
+  var poll = setInterval(function(){
+    sendHeight();
+    if(++count > 20) clearInterval(poll);
+  }, 500);
+
+  // Also watch DOM changes
+  var mo = new MutationObserver(sendHeight);
+  mo.observe(document.body,{childList:true,subtree:true,attributes:true});
 })();
 </script>
 </body>
